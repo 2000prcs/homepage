@@ -12,13 +12,13 @@ import {
   MobileIcon
 } from './NavbarElements';
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo>Home</NavLogo>
-          <MobileIcon>
+          <NavLogo to="/">Home</NavLogo>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -33,7 +33,7 @@ const NavBar = () => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="email">Email Me</NavBtnLink>
+            <NavBtnLink to="/email">Email Me</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
@@ -41,4 +41,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBar;
