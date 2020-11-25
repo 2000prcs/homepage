@@ -33,7 +33,7 @@ const NavBar = () => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="email">Email Me</NavBtnLink>
+            <NavBtnLink to="/email">Email Me</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
