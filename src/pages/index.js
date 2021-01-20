@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import SEO from '../components/seo';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
+import Home from '../components/Home';
 
 import '../styles/globalStyles.css';
 
-const Home = () => {
+const App = () => {
   
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,15 +16,12 @@ const Home = () => {
   
   return (
   <>
-    <SEO title="Home" />
+    <SEO title="App" />
     <Sidebar isOpen={isOpen} toggle={toggle} />
     <Navbar toggle={toggle} />
-    <div className="content">  
-      <h1>Hi I'm Mo</h1>
-      <h1>I'm a Software Engineer</h1>
-    </div>
+    <Home />
   </>
   )
 };
 
-export default Home;
+export default App;
