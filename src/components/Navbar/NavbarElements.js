@@ -4,7 +4,7 @@ import { Link as LinkRouter } from 'gatsby';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: #000;
+  background: #d9899e;
   height: 80px;
   /* margin-top: -80px; */
   display: flex;
