@@ -4,14 +4,14 @@ import { Link as LinkRouter } from 'gatsby';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: #d9899e;
+  background: transparent;
+  width: 100%;
   height: 80px;
-  /* margin-top: -80px; */
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
 
@@ -31,7 +31,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(props => <LinkRouter {...props} />)`
-  color: #fff;
+  color: #ffffff;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -74,7 +74,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkScroll)`
-  color: #fff;
+  color: #ffffff;
   display: flex;
   align-items: center;
   text-decoration: none;
