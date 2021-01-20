@@ -17,6 +17,10 @@ const Home = () => {
   const parallaxRef = useRef();
   const url = (name) => `../../images/${name}`;
 
+  const scrollPage = (pageNumber) => {
+    parallaxRef.current.scrollTo(pageNumber);
+  };
+
   return (
     // <HeroContainer>
       // <HeroBg>
@@ -44,9 +48,8 @@ const Home = () => {
         offset={0}
         speed={0.1}
         style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}
-        onClick={() => {parallaxRef.current.scrollTo(1)}}
       >
-        <HeroSection />
+        <HeroSection scrollPage={scrollPage} pageNumber={1} />
       </ParallaxLayer>
       <ParallaxLayer
         offset={1}
