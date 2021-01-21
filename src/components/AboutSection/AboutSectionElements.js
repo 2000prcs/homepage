@@ -20,8 +20,10 @@ export const Content = styled.div`
 `
 
 export const Block = styled.div`
-  display: flex;
+  background-image: ${({ src }) => `url(${src})`};
+  background-size: cover;
   border-radius: 10%;
+  display: flex;
   width: 15em;
   height: 15em;
   margin: 10px;

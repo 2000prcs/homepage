@@ -1,12 +1,14 @@
 import React from 'react';
-import { Block, Container, Content, Intro, Row } from './AboutSectionElements';
+import { Container, Content, Intro, Row } from './AboutSectionElements';
+import AboutBlock from './AboutBlock';
 
-// import svg from '../../images/flowers.svg';
+import pets from '../../images/pets.jpg';
 
 const AboutSection = () => {
+  const AboutDataFirstRow  = [ 'Cat & Dog', 'Game', 'Travel'];
+  const AboutDataSecondRow = [ 'Party', 'Piano', 'Book' ];
 
   return (
-    // <img src={svg} style={{ width: '50%' }} />
     <Container>
       <Intro>
         I was born and raised in South Korea, and I moved to the US in 2014.
@@ -15,26 +17,10 @@ const AboutSection = () => {
       </Intro>
       <Content>
         <Row>
-          <Block>
-            Cat & Dog
-          </Block>
-          <Block>
-            Game
-          </Block>
-          <Block>
-            Travel
-          </Block>
+          {AboutDataFirstRow.map(data => <AboutBlock text={data} src={pets} />)}
         </Row>
         <Row>
-          <Block>
-            Party
-          </Block>
-          <Block>
-            Piano
-          </Block>
-          <Block>
-            Book
-          </Block>
+          {AboutDataSecondRow.map(data => <AboutBlock text={data} src={pets} />)}
         </Row>
       </Content>
     </Container>
