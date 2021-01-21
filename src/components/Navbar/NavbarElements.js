@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'gatsby';
-import { Link as LinkScroll } from 'react-scroll';
+// import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
   background: transparent;
@@ -30,7 +30,7 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `
 
-export const NavLogo = styled(props => <LinkRouter {...props} />)`
+export const NavLogo = styled.div`
   color: #ffffff;
   justify-self: flex-start;
   cursor: pointer;
@@ -73,7 +73,7 @@ export const NavItem = styled.li`
   height: 80px;
 `
 
-export const NavLinks = styled(LinkScroll)`
+export const NavLinks = styled.div`
   color: #ffffff;
   display: flex;
   align-items: center;

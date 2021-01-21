@@ -1,13 +1,11 @@
-import React, { useRef } from 'react';
-// import Video from '../../videos/video.mp4';
-import Image from '../Image';
-import { HeroContainer, HeroBg, VideoBg } from './HomeElements';
+import React, { useRef, useState } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+import Sidebar from '../Sidebar';
+import Navbar from '../Navbar';
 import HeroSection from '../HeroSection';
-import ProfileSection from '../ProfileSection';
+import ProfileSection from '../AboutSection';
 import PortfolioSection from '../PortfolioSection';
 import ContactSection from '../ContactSection';
-// import image from '../../images/sky_background.jpg';
 
 //import svg from '../../images/flowers.svg';
 //import bg from '../../images/sky_background.jpg'
@@ -15,16 +13,23 @@ import star from '../../images/star.svg';
 
 const Home = () => {
   const parallaxRef = useRef();
-  const url = (name) => `../../images/${name}`;
+  const [isOpen, setIsOpen] = useState(false);
 
   const scrollPage = (pageNumber) => {
     parallaxRef.current.scrollTo(pageNumber);
   };
 
+  const toggle = () => {  
+    setIsOpen(!isOpen);
+  };
+
   return (
     // <HeroContainer>
       // <HeroBg>
-        // {/* <VideoBg autoplay loop muted src={Video} type="video/mp4" /> */}
+        // {/* <VideoBg autoplay loop muted src={Video} type="video/mp4" /> */}    
+    <>
+    <Navbar toggle={toggle} scrollPage={scrollPage} />
+    <Sidebar isOpen={isOpen} toggle={toggle} scrollPage={scrollPage} />
     <Parallax pages={4} ref={parallaxRef}>
       <ParallaxLayer
         offset={0}
@@ -76,8 +81,8 @@ const Home = () => {
         <ContactSection />
       </ParallaxLayer>
     </Parallax>
-      // </HeroBg>
-    // </HeroContainer>
+    </>
+    // {/* // </HeroContainer> */}
   );
 };
 
