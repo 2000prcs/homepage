@@ -1,11 +1,12 @@
 import React from 'react';
-import { Block } from './AboutSectionElements';
+import { Block, Overlay, Text } from './AboutSectionElements';
 
-const AboutBlock = ({ text, src }) => {
-
+const AboutBlock = ({ text, gif, image }) => {
   return (
-    <Block src={src}>
-      {text}
+    <Block image={image} gif={gif}>
+      <Overlay>
+        <Text>{text}</Text>
+      </Overlay>
     </Block>
   );
 };

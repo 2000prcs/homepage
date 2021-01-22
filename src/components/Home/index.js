@@ -7,9 +7,7 @@ import ProfileSection from '../AboutSection';
 import PortfolioSection from '../PortfolioSection';
 import ContactSection from '../ContactSection';
 
-//import svg from '../../images/flowers.svg';
-//import bg from '../../images/sky_background.jpg'
-import star from '../../images/star.svg';
+import star from '../../icons/star.svg';
 
 const Home = () => {
   const parallaxRef = useRef();
@@ -23,10 +21,7 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
-  return (
-    // <HeroContainer>
-      // <HeroBg>
-        // {/* <VideoBg autoplay loop muted src={Video} type="video/mp4" /> */}    
+  return ( 
     <>
     <Navbar toggle={toggle} scrollPage={scrollPage} />
     <Sidebar isOpen={isOpen} toggle={toggle} scrollPage={scrollPage} />
@@ -37,7 +32,6 @@ const Home = () => {
         factor={4}
         style={{ backgroundColor: '#04B2D9', backgroundSize: 'cover' }}
       /> 
-      {/* <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#24292e' }} /> */}
       <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#049DD9' }} />
       <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#0367A6' }} />
       <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#012340' }} />
@@ -82,7 +76,6 @@ const Home = () => {
       </ParallaxLayer>
     </Parallax>
     </>
-    // {/* // </HeroContainer> */}
   );
 };
 
