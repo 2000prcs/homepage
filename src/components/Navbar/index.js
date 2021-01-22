@@ -12,29 +12,29 @@ import {
   MobileIcon
 } from './NavbarElements';
 
-const NavBar = ({ toggle }) => {
+const NavBar = ({ scrollPage, toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Home</NavLogo>
+          <NavLogo onClick={() => scrollPage(0)}>Home</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks onClick={() => scrollPage(1)}>About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="portfolio">Portfolio</NavLinks>
+              <NavLinks onClick={() => scrollPage(2)}>Portfolio</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
+              <NavLinks onClick={() => scrollPage(3)}>Contact</NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to="/email">Email Me</NavBtnLink>
-          </NavBtn>
+          {/* <NavBtn>
+            <NavBtnLink>Email Me</NavBtnLink>
+          </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>

@@ -1,30 +1,30 @@
-import React, { useRef } from 'react';
-// import Video from '../../videos/video.mp4';
-import Image from '../Image';
-import { HeroContainer, HeroBg, VideoBg } from './HomeElements';
+import React, { useRef, useState } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+import Sidebar from '../Sidebar';
+import Navbar from '../Navbar';
 import HeroSection from '../HeroSection';
-import ProfileSection from '../ProfileSection';
+import ProfileSection from '../AboutSection';
 import PortfolioSection from '../PortfolioSection';
 import ContactSection from '../ContactSection';
-// import image from '../../images/sky_background.jpg';
 
-//import svg from '../../images/flowers.svg';
-//import bg from '../../images/sky_background.jpg'
-import star from '../../images/star.svg';
+import star from '../../icons/star.svg';
 
 const Home = () => {
   const parallaxRef = useRef();
-  const url = (name) => `../../images/${name}`;
+  const [isOpen, setIsOpen] = useState(false);
 
   const scrollPage = (pageNumber) => {
     parallaxRef.current.scrollTo(pageNumber);
   };
 
-  return (
-    // <HeroContainer>
-      // <HeroBg>
-        // {/* <VideoBg autoplay loop muted src={Video} type="video/mp4" /> */}
+  const toggle = () => {  
+    setIsOpen(!isOpen);
+  };
+
+  return ( 
+    <>
+    <Navbar toggle={toggle} scrollPage={scrollPage} />
+    <Sidebar isOpen={isOpen} toggle={toggle} scrollPage={scrollPage} />
     <Parallax pages={4} ref={parallaxRef}>
       <ParallaxLayer
         offset={0}
@@ -32,7 +32,6 @@ const Home = () => {
         factor={4}
         style={{ backgroundColor: '#04B2D9', backgroundSize: 'cover' }}
       /> 
-      {/* <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#24292e' }} /> */}
       <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#049DD9' }} />
       <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#0367A6' }} />
       <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#012340' }} />
@@ -76,8 +75,7 @@ const Home = () => {
         <ContactSection />
       </ParallaxLayer>
     </Parallax>
-      // </HeroBg>
-    // </HeroContainer>
+    </>
   );
 };
 

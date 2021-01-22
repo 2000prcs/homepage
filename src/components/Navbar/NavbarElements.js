@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'gatsby';
-import { Link as LinkScroll } from 'react-scroll';
+// import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
   background: transparent;
@@ -26,18 +26,18 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+  padding: 0 40px;
+  /* max-width: 1100px; */
 `
 
-export const NavLogo = styled(props => <LinkRouter {...props} />)`
+export const NavLogo = styled.div`
   color: #ffffff;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   font-weight: bold;
   text-decoration: none;
 `
@@ -73,7 +73,7 @@ export const NavItem = styled.li`
   height: 80px;
 `
 
-export const NavLinks = styled(LinkScroll)`
+export const NavLinks = styled.div`
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -103,6 +103,7 @@ export const NavBtnLink = styled(LinkRouter)`
   padding: 10px 22px;
   color: #010606;
   font-size: 16px;
+  font-weight: bold;
   outline: none;
   border: none;
   cursor: pointer;

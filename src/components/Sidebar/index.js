@@ -4,13 +4,19 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SideBtnWrap,
-  SidebarRoute,
+  // SideBtnWrap,
+  // SidebarRoute,
   Icon,
   CloseIcon
 } from './SidebarElements';
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ isOpen, scrollPage, toggle }) => {
+
+  const handleClick = (pageNumber) => {
+    scrollPage(pageNumber);
+    toggle();
+  }
+
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -18,21 +24,21 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink onClick={() => handleClick(1)}>
             About
           </SidebarLink>  
-          <SidebarLink to="portfolio" onClick={toggle}>
+          <SidebarLink onClick={() => handleClick(2)}>
             Portfolio
           </SidebarLink>  
-          <SidebarLink to="contact" onClick={toggle}>
+          <SidebarLink onClick={() => handleClick(3)}>
             Contact
           </SidebarLink>  
         </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarRoute to="/email" onClick={toggle}>
+        {/* <SideBtnWrap>
+          <SidebarRoute onClick={handleClick}>
             Email Me
           </SidebarRoute>
-        </SideBtnWrap>
+        </SideBtnWrap> */}
       </SidebarWrapper>
     </SidebarContainer>
   )
