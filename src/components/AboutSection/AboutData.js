@@ -1,39 +1,50 @@
 import pets from '../../images/pets.jpg';
 import petsGif from '../../images/pets.gif';
+import game from '../../images/game.jpg';
+import gameGif from '../../images/game.gif';
+import travel from '../../images/travel.png';
+import travelGif from '../../images/travel.gif';
+import music from '../../images/music.jpeg';
+import musicGif from '../../images/music.gif';
+import piano from '../../images/piano.png';
+import pianoGif from '../../images/piano.gif';
+import books from '../../images/books.jpeg';
+import booksGif from '../../images/books.gif';
+
 
 const AboutData = [
   [
     {
-      text: 'Cat & Dog',
+      text: 'My furry babies',
       image: pets,
       gif: petsGif
     },
     {
       text: 'Game',
-      image: pets,
-      gif: petsGif
+      image: game,
+      gif: gameGif
     },
     {
       text: 'Travel',
-      image: pets,
-      gif: petsGif
+      image: travel,
+      gif: travelGif
     },
   ],
   [
     {
-      text: 'Dance',
-      image: pets,
-      gif: petsGif
+      text: 'Music + Dance',
+      image: music,
+      gif: musicGif
     },
     {
       text: 'Piano',
-      image: pets,
-      gif: petsGif
+      image: piano,
+      gif: pianoGif
     },
     {
-      text: 'Book',
-      image: pets,
-      gif: petsGif
+      text: 'Books',
+      image: books,
+      gif: booksGif
     },
   ]
 ];

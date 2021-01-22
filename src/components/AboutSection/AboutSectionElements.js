@@ -31,6 +31,8 @@ export const Title = styled.h1`
 export const Block = styled.div`
   background-image: ${({ image }) => `url(${image})`};
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
   border-radius: 10%;
   cursor: pointer;
   display: flex;
