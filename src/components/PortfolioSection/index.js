@@ -1,10 +1,18 @@
 import React from 'react';
-import svg from '../../images/flowers.svg';
+import { Block, Container, Content, Title } from './PortfolioSectionElements';
+import PortfolioData from './PortfolioData';
 
 const PortfolioSection = () => {
 
   return (
-    <img src={svg} style={{ width: '40%' }} />
+  <Container>
+    <Title>
+      My Work
+    </Title>
+    <Content>
+      {PortfolioData.map(data => <Block data={data} />)}
+    </Content>
+  </Container>
   );
 };
 

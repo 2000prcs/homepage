@@ -1,16 +1,9 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
+export const Container = styled.div`
   color: #ffffff;
   width: 80%;
 `
-
-export const Intro = styled.div`
-  margin-bottom: 20px;
-  width: 100%;
-`
-
-export const Paragraph = styled.p``
 
 export const Content = styled.div`
   display: flex;
@@ -47,23 +40,6 @@ export const Block = styled.div`
     height: 30%;
     width: auto;
   }
-`
-
-export const Row = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
-`
-
-export const Technologies = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
 `
 
 export const Overlay = styled.div`

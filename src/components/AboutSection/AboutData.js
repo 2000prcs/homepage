@@ -11,40 +11,108 @@ import pianoGif from '../../images/piano.gif';
 import books from '../../images/books.jpeg';
 import booksGif from '../../images/books.gif';
 
+// const AboutData = [
+//   [
+//     {
+//       text: 'My furry babies',
+//       image: pets,
+//       gif: petsGif
+//     },
+//     {
+//       text: 'Game',
+//       image: game,
+//       gif: gameGif
+//     },
+//     {
+//       text: 'Travel',
+//       image: travel,
+//       gif: travelGif
+//     },
+//   ],
+//   [
+//     {
+//       text: 'Music + Dance',
+//       image: music,
+//       gif: musicGif
+//     },
+//     {
+//       text: 'Piano',
+//       image: piano,
+//       gif: pianoGif
+//     },
+//     {
+//       text: 'Books',
+//       image: books,
+//       gif: booksGif
+//     },
+//   ]
+// ];
 
 const AboutData = [
   [
     {
-      text: 'My furry babies',
+      text: 'JavaScript (ES6+)',
       image: pets,
-      gif: petsGif
     },
     {
-      text: 'Game',
+      text: 'React',
       image: game,
-      gif: gameGif
     },
     {
-      text: 'Travel',
+      text: 'Redux',
       image: travel,
-      gif: travelGif
+    },
+    {
+      text: 'Node.js',
+      image: game,
+    },
+    {
+      text: 'HTML & CSS/SCSS',
+      image: travel,
     },
   ],
   [
     {
-      text: 'Music + Dance',
+      text: 'React Native',
       image: music,
-      gif: musicGif
     },
     {
-      text: 'Piano',
+      text: 'Python',
       image: piano,
-      gif: pianoGif
     },
     {
-      text: 'Books',
+      text: 'Django',
       image: books,
-      gif: booksGif
+    },
+    {
+      text: 'PostgreSQL',
+      image: piano,
+    },
+    {
+      text: 'AWS EC2, S3, RDS, DocumentDB',
+      image: books,
+    },
+  ],
+  [
+    {
+      text: 'Docker',
+      image: music,
+    },
+    {
+      text: 'RabbitMQ',
+      image: piano,
+    },
+    {
+      text: 'Celery',
+      image: books,
+    },
+    {
+      text: 'Redis',
+      image: piano,
+    },
+    {
+      text: 'MongoDB',
+      image: books,
     },
   ]
 ];
