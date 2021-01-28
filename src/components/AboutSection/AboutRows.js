@@ -1,24 +1,20 @@
 import React from 'react';
-import AboutBlock from './AboutBlock';
-import { Row } from './AboutSectionElements';
+import { Block, Image, Row } from './AboutSectionElements';
 
 import icon from '../../icons/code-flat.svg';
 
-const AboutRows = ({ rowData }) => {
+const PortfolioRows = ({ rowData, withIcon }) => {
 
   return (
     <Row>
       {rowData.map(data =>
-        <div><img src={icon} style={{ width: '30px' }} />{data.text}</div>
-        // <AboutBlock
-        //   gif={data.gif}
-        //   image={data.image}
-        //   text={data.text}
-        //   key={data.text}
-        // />
+        <Block>
+          {withIcon && <Image src={icon} style={{ width: '30px' }} />}
+          {data.text}
+        </Block>
       )}
     </Row>
   );
 };
 
-export default AboutRows;
+export default PortfolioRows;

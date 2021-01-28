@@ -54,7 +54,7 @@ const Home = () => {
         offset={1}
         speed={0.1}
         style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}
-        onClick={() => {parallaxRef.current.scrollTo(2)}}
+        //onClick={() => {parallaxRef.current.scrollTo(2)}}
       >
         <ProfileSection />
       </ParallaxLayer>
@@ -62,7 +62,7 @@ const Home = () => {
         offset={2}
         speed={0.1}
         style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-        onClick={() => {parallaxRef.current.scrollTo(3)}}
+        //onClick={() => {parallaxRef.current.scrollTo(3)}}
       >
         <PortfolioSection />
       </ParallaxLayer>
@@ -70,7 +70,7 @@ const Home = () => {
         offset={3}
         speed={-0}
         style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-        onClick={() => {parallaxRef.current.scrollTo(0)}}
+        //onClick={() => {parallaxRef.current.scrollTo(0)}}
       >
         <ContactSection />
       </ParallaxLayer>

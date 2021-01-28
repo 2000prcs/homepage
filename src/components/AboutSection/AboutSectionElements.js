@@ -23,30 +23,10 @@ export const Title = styled.h1`
 `
 
 export const Block = styled.div`
-  background-image: ${({ image }) => `url(${image})`};
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; 
-  border-radius: 10%;
-  cursor: pointer;
+  align-items: center;
   display: flex;
-  width: 27em;
-  height: 23em;
-  margin: 10px;
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
-
-  &:hover {
-    background-image: ${({ gif }) => `url(${gif})`};
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 33%;
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 30%;
-    width: auto;
-  }
+  justify-content: flex-start;
+  margin-bottom: 5px;
 `
 
 export const Row = styled.div`
@@ -59,6 +39,10 @@ export const Row = styled.div`
   }
 `
 
+export const Image = styled.img`
+  margin-right: 5px;
+`
+
 export const Technologies = styled.div`
   display: flex;
   flex-direction: row;
@@ -66,12 +50,11 @@ export const Technologies = styled.div`
   margin-bottom: 20px;
 `
 
-export const Overlay = styled.div`
-  width: 100%;
-  height: 100%;
-  border-radius: 10%;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 40px;
+export const Interests = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
 `
 
 export const Text = styled.div`

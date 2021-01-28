@@ -5,5 +5,4 @@ export const Container = styled.section`
   text-align: center;
 `
 
-export const Heading = styled.h1`
-`
+export const Heading = styled.h1``
