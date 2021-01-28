@@ -1,52 +1,102 @@
 import pets from '../../images/pets.jpg';
-import petsGif from '../../images/pets.gif';
 import game from '../../images/game.jpg';
-import gameGif from '../../images/game.gif';
 import travel from '../../images/travel.png';
-import travelGif from '../../images/travel.gif';
 import music from '../../images/music.jpeg';
-import musicGif from '../../images/music.gif';
 import piano from '../../images/piano.png';
-import pianoGif from '../../images/piano.gif';
 import books from '../../images/books.jpeg';
-import booksGif from '../../images/books.gif';
 
-
-const AboutData = [
+export const TechnologiesData = [
   [
     {
-      text: 'My furry babies',
+      text: 'JavaScript (ES6+)',
       image: pets,
-      gif: petsGif
     },
     {
-      text: 'Game',
+      text: 'React',
       image: game,
-      gif: gameGif
     },
     {
-      text: 'Travel',
+      text: 'Redux',
       image: travel,
-      gif: travelGif
+    },
+    {
+      text: 'Node.js',
+      image: game,
+    },
+    {
+      text: 'HTML & CSS/SCSS',
+      image: travel,
     },
   ],
   [
     {
-      text: 'Music + Dance',
+      text: 'React Native',
       image: music,
-      gif: musicGif
     },
     {
-      text: 'Piano',
+      text: 'Python',
       image: piano,
-      gif: pianoGif
     },
     {
-      text: 'Books',
+      text: 'Django',
       image: books,
-      gif: booksGif
+    },
+    {
+      text: 'PostgreSQL',
+      image: piano,
+    },
+    {
+      text: 'AWS EC2, S3, RDS, DocumentDB',
+      image: books,
+    },
+  ],
+  [
+    {
+      text: 'Docker',
+      image: music,
+    },
+    {
+      text: 'RabbitMQ',
+      image: piano,
+    },
+    {
+      text: 'Celery',
+      image: books,
+    },
+    {
+      text: 'Redis',
+      image: piano,
+    },
+    {
+      text: 'MongoDB',
+      image: books,
     },
   ]
 ];
 
-export default AboutData;
+export const InterestsData = [
+  [
+    {
+      text: '🐱🐶 My furry babies',
+    },
+    {
+      text: '🎮🎲 Game',
+    },
+  ],
+  [
+    {
+      text: '✈️🧳 Travel',
+    },
+    {
+      text: '🎶💃 Music & Dance',
+    },
+  ],
+  [
+    {
+      text: '🎹 Piano',
+    },
+    {
+      text: '🥗🦐🍜🍄🥩🌯 Food',
+    },
+  ]
+];
