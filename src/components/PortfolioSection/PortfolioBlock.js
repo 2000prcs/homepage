@@ -1,19 +1,22 @@
 import React from 'react';
 import {
-  Block, BlockContainer, TopContent, SideContent, Overlay, Description, Name, Technologies
+  Block, BlockContainer, SideContent, Description, Name, Technologies
 } from './PortfolioSectionElements';
 
-const PortfolioBlock = ({ name, description, gif, image, technologies }) => {
+import githubIcon from '../../icons/github.svg';
+
+const PortfolioBlock = ({ name, description, gif, image, technologies, repo }) => {
   return (
     <BlockContainer>
-      {/* <TopContent> */}
         <Block image={image} gif={gif} />
         <SideContent>
           <Name>{name}</Name>
           <Technologies>{technologies}</Technologies>
           <Description>{description}</Description>
+          <a href={repo}>
+            <img src={githubIcon} />
+          </a>
         </SideContent>
-      {/* </TopContent> */}
     </BlockContainer>
   );
 };

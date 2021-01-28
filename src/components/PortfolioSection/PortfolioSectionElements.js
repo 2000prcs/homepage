@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   color: #ffffff;
-  width: 80%;
+  width: 85%;
 `
 
 export const Content = styled.div`
@@ -19,6 +19,7 @@ export const BlockContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -61,10 +62,6 @@ export const Block = styled.div`
 //   padding: 40px;
 // `
 
-export const TopContent = styled.div`
-  display: flex;
-`
-
 export const SideContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -72,11 +69,7 @@ export const SideContent = styled.div`
   width: 60%;
 `
 
-export const Name = styled.h1`
-  /* position: relative;
-  right: 0%;
-  top: 100%; */
-`
+export const Name = styled.h1``
 
 export const Description = styled.div``
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   color: #ffffff;
-  width: 80%;
+  width: 85%;
 `
 
 export const Intro = styled.div`
