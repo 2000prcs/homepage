@@ -71,6 +71,10 @@ export const SideContent = styled.div`
 
 export const Name = styled.h1``
 
-export const Description = styled.div``
+export const Technologies = styled.div`
+  margin: 20px 0;
+`
 
-export const Technologies = styled.li``
+export const Description = styled.div`
+  margin-bottom: 20px;
+`
