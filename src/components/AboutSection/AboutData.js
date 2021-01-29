@@ -1,75 +1,70 @@
-import pets from '../../images/pets.jpg';
-import game from '../../images/game.jpg';
-import travel from '../../images/travel.png';
-import music from '../../images/music.jpeg';
-import piano from '../../images/piano.png';
-import books from '../../images/books.jpeg';
+
 
 export const TechnologiesData = [
   [
     {
       text: 'JavaScript (ES6+)',
-      image: pets,
+      // image: pets,
     },
     {
       text: 'React',
-      image: game,
+      // image: game,
     },
     {
       text: 'Redux',
-      image: travel,
+      // image: travel,
     },
     {
       text: 'Node.js',
-      image: game,
+      // image: game,
     },
     {
       text: 'HTML & CSS/SCSS',
-      image: travel,
+      // image: travel,
     },
   ],
   [
     {
       text: 'React Native',
-      image: music,
+      // image: music,
     },
     {
       text: 'Python',
-      image: piano,
+      // image: piano,
     },
     {
       text: 'Django',
-      image: books,
+      // image: books,
     },
     {
       text: 'PostgreSQL',
-      image: piano,
+      // image: piano,
     },
     {
       text: 'AWS EC2, S3, RDS, DocumentDB',
-      image: books,
+      // image: books,
     },
   ],
   [
     {
       text: 'Docker',
-      image: music,
+      // image: music,
     },
     {
       text: 'RabbitMQ',
-      image: piano,
+      // image: piano,
     },
     {
       text: 'Celery',
-      image: books,
+      // image: books,
     },
     {
       text: 'Redis',
-      image: piano,
+      // image: piano,
     },
     {
       text: 'MongoDB',
-      image: books,
+      // image: books,
     },
   ]
 ];

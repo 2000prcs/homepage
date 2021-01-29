@@ -1,10 +1,23 @@
 import React from 'react';
-import svg from '../../images/flowers.svg';
+import { Container, Title, Content } from './ContactSectionElements';
+import ContactBlock from './ContactBlock';
+import ContactData from './ContactData';
 
 const ContactSection = () => {
 
   return (
-    <img src={svg} style={{ width: '50%' }} />
+    <Container>
+      <Title>Contact Me</Title>
+      <Content>
+        {ContactData.map((data) => 
+          <ContactBlock
+            name={data.name}
+            icon={data.icon}
+            url={data.url}
+          />
+        )}
+      </Content>
+    </Container>
   );
 };
 
