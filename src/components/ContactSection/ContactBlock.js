@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Block } from './ContactSectionElements';
 
-const ContactBlock = ({ name, icon, url }) => {
+const ContactBlock = ({ name, Icon, url }) => {
   return (
     <Block>
-      <a href={url} target="_blank"><img alt={name} src={icon} /></a>
+      <a href={url} target="_blank"><Icon alt={name} /></a>
     </Block>
   );
 };

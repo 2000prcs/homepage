@@ -3,7 +3,7 @@ import {
   Block, BlockContainer, SideContent, Description, Name, Technologies
 } from './PortfolioSectionElements';
 
-import githubIcon from '../../icons/github.svg';
+import GithubIcon from '../../icons/github.svg';
 
 const PortfolioBlock = ({ name, description, gif, image, technologies, repo }) => {
   return (
@@ -14,7 +14,7 @@ const PortfolioBlock = ({ name, description, gif, image, technologies, repo }) =
           <Technologies>{technologies}</Technologies>
           <Description>{description}</Description>
           <a href={repo} target="_blank">
-            <img src={githubIcon} style={{ width: '30px' }}/>
+            <GithubIcon style={{ width: '30px' }}/>
           </a>
         </SideContent>
     </BlockContainer>
