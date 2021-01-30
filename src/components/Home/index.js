@@ -7,7 +7,21 @@ import ProfileSection from '../AboutSection';
 import PortfolioSection from '../PortfolioSection';
 import ContactSection from '../ContactSection';
 
-import star from '../../icons/star.svg';
+import FishOneImg from '../../images/yellow_fish.svg';
+import FishGroupImg from '../../images/fish_cluster.svg';
+import JellyfishImg from '../../images/jellyfish.svg';
+import CrabImg from '../../images/crab.svg';
+import DolphinImg from '../../images/dolphin.svg';
+import FishTwoImg from '../../images/fish2.svg';
+import OctopusImg from '../../images/octopus.svg';
+import RayImg from '../../images/ray.svg';
+import SeaHorseImg from '../../images/sea_horse.svg';
+import StarFishImg from '../../images/starfish.svg';
+import SquidImg from '../../images/squid.svg';
+import TurtleImg from '../../images/turtle.svg';
+import WaleImg from '../../images/wale.svg';
+
+import bg from '../../images/underwater.png';
 
 const Home = () => {
   const parallaxRef = useRef();
@@ -17,8 +31,14 @@ const Home = () => {
     parallaxRef.current.scrollTo(pageNumber);
   };
 
-  const toggle = () => {  
+  const toggle = () => {
     setIsOpen(!isOpen);
+  };
+
+  const commonStyle = {
+    alignItems: 'center',
+    display: 'flex',
+    justifyContent: 'center'
   };
 
   return ( 
@@ -30,47 +50,77 @@ const Home = () => {
         offset={0}
         speed={0}
         factor={4}
-        style={{ backgroundColor: '#04B2D9', backgroundSize: 'cover' }}
-      /> 
-      <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#049DD9' }} />
-      <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#0367A6' }} />
-      <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#012340' }} />
-      <ParallaxLayer
-        offset={0.5}
-        speed={0.8}
-        style={{ opacity: 0.1 }}
-      >
-        <img src={star} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-        <img src={star} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+        style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center center'}}
+      />
+      <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#04b2d9', opacity: 0.6 }} />
+      <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#049dd9', opacity: 0.6 }} />
+      <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#0367a6', opacity: 0.6 }} />
+      <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#012340', opacity: 0.6 }} />
+      <ParallaxLayer offset={0} speed={-0.3}>
+        <FishGroupImg style={{ display: 'block', width: '100%', marginLeft: '-8%' }} />
       </ParallaxLayer>
+      <ParallaxLayer offset={0.3} speed={0.8}
+      >
+        <FishOneImg style={{ display: 'block', width: '50%', marginLeft: '-8%' }} />
+        <FishTwoImg style={{ display: 'block', width: '50%', marginLeft: '15%' }} />
+        <WaleImg style={{ display: 'block', width: '50%', marginLeft: '35%' }} />
+        <DolphinImg style={{ display: 'block', width: '50%', marginLeft: '15%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={1} speed={0.8}>
+        <CrabImg style={{ display: 'block', width: '50%', marginLeft: '55%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={1.75} speed={0.5}>
+        <OctopusImg style={{ display: 'block', width: '50%', marginLeft: '70%' }} />
+        <JellyfishImg style={{ display: 'block', width: '50%', marginLeft: '40%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={1} speed={0.2}>
+        <RayImg style={{ display: 'block', width: '50%', marginLeft: '10%' }} />
+        <SeaHorseImg style={{ display: 'block', width: '50%', marginLeft: '75%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={1.6} speed={-0.1}>
+        <StarFishImg style={{ display: 'block', width: '50%', marginLeft: '60%' }} />
+        <SquidImg style={{ display: 'block', width: '50%', marginLeft: '30%' }} />
+        <TurtleImg style={{ display: 'block', width: '50%', marginLeft: '80%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={2.6} speed={0.4}>
+        <FishOneImg style={{ display: 'block', width: '50%', marginLeft: '5%' }} />
+        <FishOneImg style={{ display: 'block', width: '55%', marginLeft: '75%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={2.5} speed={-0.4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
+        <FishGroupImg style={{ width: '50%' }} />
+      </ParallaxLayer>
+
       <ParallaxLayer
         offset={0}
         speed={0.1}
-        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}
+        style={commonStyle}
       >
         <HeroSection scrollPage={scrollPage} pageNumber={1} />
       </ParallaxLayer>
       <ParallaxLayer
         offset={1}
         speed={0.1}
-        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}
-        //onClick={() => {parallaxRef.current.scrollTo(2)}}
+        style={commonStyle}
       >
         <ProfileSection />
       </ParallaxLayer>
       <ParallaxLayer
         offset={2}
         speed={0.1}
-        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-        //onClick={() => {parallaxRef.current.scrollTo(3)}}
+        style={commonStyle}
       >
         <PortfolioSection />
       </ParallaxLayer>
       <ParallaxLayer
         offset={3}
         speed={-0}
-        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-        //onClick={() => {parallaxRef.current.scrollTo(0)}}
+        style={commonStyle}
       >
         <ContactSection />
       </ParallaxLayer>
