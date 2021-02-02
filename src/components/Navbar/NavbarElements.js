@@ -5,6 +5,7 @@ import { Link as LinkRouter } from 'gatsby';
 
 export const Nav = styled.nav`
   background: transparent;
+  backdrop-filter: saturate(100%) blur(10px);
   width: 100%;
   height: 80px;
   display: flex;

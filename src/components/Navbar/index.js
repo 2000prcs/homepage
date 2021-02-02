@@ -32,11 +32,9 @@ const NavBar = ({ scrollPage, toggle }) => {
               <NavLinks onClick={() => scrollPage(3)}>Contact</NavLinks>
             </NavItem>
           </NavMenu>
-          {/* <NavBtn>
-            <NavBtnLink>Email Me</NavBtnLink>
-          </NavBtn> */}
         </NavbarContainer>
       </Nav>
+      {/* <div style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0),rgba(47, 52, 172, 0))'}}></div> */}
     </>
   )
 }
