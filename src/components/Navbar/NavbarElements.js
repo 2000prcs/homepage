@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -79,7 +79,7 @@ export const NavLinks = styled.div`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 2rem;
   height: 100%;
   cursor: pointer;
 

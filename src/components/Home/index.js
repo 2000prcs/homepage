@@ -8,11 +8,12 @@ import PortfolioSection from '../PortfolioSection';
 import ContactSection from '../ContactSection';
 
 import FishOneImg from '../../images/yellow_fish.svg';
+import FishTwoImg from '../../images/fish2.svg';
+import TwoFishesImg from '../../images/two_fishes.svg';
 import FishGroupImg from '../../images/fish_cluster.svg';
 import JellyfishImg from '../../images/jellyfish.svg';
 import CrabImg from '../../images/crab.svg';
 import DolphinImg from '../../images/dolphin.svg';
-import FishTwoImg from '../../images/fish2.svg';
 import OctopusImg from '../../images/octopus.svg';
 import RayImg from '../../images/ray.svg';
 import SeaHorseImg from '../../images/sea_horse.svg';
@@ -20,6 +21,12 @@ import StarFishImg from '../../images/starfish.svg';
 import SquidImg from '../../images/squid.svg';
 import TurtleImg from '../../images/turtle.svg';
 import WaleImg from '../../images/wale.svg';
+import EllImg from '../../images/ell.svg';
+import LobsterImg from '../../images/lobster.svg';
+import AnglerFishImg from '../../images/angler_fish.svg';
+import FuguImg from '../../images/fugu.svg';
+import AmmoniteImg from '../../images/ammonite.svg';
+import BabySharkImg from '../../images/baby_shark.svg';
 
 import BackgroundImg from '../../images/underwater.png';
 
@@ -57,20 +64,23 @@ const Home = () => {
       <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#0367a6', opacity: 0.6 }} />
       <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#012340', opacity: 0.6 }} />
       <ParallaxLayer offset={0} speed={-0.3}>
-        <FishGroupImg style={{ display: 'block', width: '50%', marginLeft: '45%', marginTop: '-25%'}} />
-        <TurtleImg style={{ display: 'block', width: '50%', marginLeft: '70%', marginTop: '-20%' }} />
+        <FishGroupImg style={{ display: 'block', width: '50%', marginLeft: '45%', marginTop: '-12%'}} />
+        <TwoFishesImg style={{ display: 'block', width: '50%', marginLeft: '45%', marginTop: '-25%'}} />
+        <TurtleImg style={{ display: 'block', width: '50%', marginLeft: '70%', marginTop: '-33%' }} />
       </ParallaxLayer>
       <ParallaxLayer offset={0.3} speed={0.8}
       >
         <FishOneImg style={{ display: 'block', width: '50%', marginLeft: '-8%' }} />
-        <FishTwoImg style={{ display: 'block', width: '50%', marginLeft: '-5%', marginTop: '-50%' }} />
-        <WaleImg style={{ display: 'block', width: '50%', marginLeft: '7%', marginTop: '50%' }} />
-        <DolphinImg style={{ display: 'block', width: '50%', marginLeft: '15%' }} />
+        <FishTwoImg style={{ display: 'block', width: '50%', marginLeft: '-5%', marginTop: '-23%' }} />
+        <FuguImg style={{ display: 'block', width: '50%', marginLeft: '-5%', marginTop: '-75%' }} />
+        <WaleImg style={{ display: 'block', width: '50%', marginLeft: '38%', marginTop: '37%' }} />
+        <DolphinImg style={{ display: 'block', width: '50%', marginLeft: '15%', marginTop: '16%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0.2}>
         <RayImg style={{ display: 'block', width: '50%', marginLeft: '17%', marginTop: '-40%' }} />
         <SeaHorseImg style={{ display: 'block', width: '50%', marginLeft: '-15%' }} />
+        <BabySharkImg style={{ display: 'block', width: '50%', marginLeft: '-15%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0.8}>
@@ -85,15 +95,16 @@ const Home = () => {
       <ParallaxLayer offset={1.6} speed={-0.1}>
         <StarFishImg style={{ display: 'block', width: '50%', marginLeft: '60%' }} />
         <SquidImg style={{ display: 'block', width: '50%', marginLeft: '40%', marginTop: '-20%' }} />
+        <LobsterImg style={{ display: 'block', width: '55%', marginLeft: '75%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={2.6} speed={0.4}>
-        <FishOneImg style={{ display: 'block', width: '50%', marginLeft: '5%' }} />
-        <FishOneImg style={{ display: 'block', width: '55%', marginLeft: '75%' }} />
+        <EllImg style={{ display: 'block', width: '50%', marginLeft: '5%' }} />
+        <AnglerFishImg style={{ width: '50%' }} />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={2.5} speed={-0.4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-        <FishGroupImg style={{ width: '50%' }} />
+      <ParallaxLayer offset={2.5} speed={-0.4}>
+        <AmmoniteImg style={{ width: '50%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer
