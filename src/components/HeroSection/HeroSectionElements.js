@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   color: #ffffff;
-  font-size: 30px;
+  font-size: 2rem;
   text-align: center;
 `
 
