@@ -4,8 +4,6 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  // SideBtnWrap,
-  // SidebarRoute,
   Icon,
   CloseIcon
 } from './SidebarElements';
@@ -34,11 +32,6 @@ const Sidebar = ({ isOpen, scrollPage, toggle }) => {
             Contact
           </SidebarLink>  
         </SidebarMenu>
-        {/* <SideBtnWrap>
-          <SidebarRoute onClick={handleClick}>
-            Email Me
-          </SidebarRoute>
-        </SideBtnWrap> */}
       </SidebarWrapper>
     </SidebarContainer>
   )

@@ -7,7 +7,7 @@ const ContactSection = () => {
 
   return (
     <Container>
-      <Title>Contact Me</Title>
+      <Title>Contact Me!</Title>
       <Content>
         {ContactData.map((data) => 
           <ContactBlock

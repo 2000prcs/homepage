@@ -9,7 +9,7 @@ const AboutSection = () => {
   return (
     <Container>
       <Intro>
-        <Paragraph>안녕하세요! Born and raised in South Korea 🇰🇷, moved to the US in 2014.</Paragraph>
+        <Paragraph><h1>안녕하세요!</h1> Born and raised in South Korea 🇰🇷, moved to the US in 2014.</Paragraph>
         <Paragraph>I love seeing people's happy faces while they're experiencing my creations - it's what led me to be a Software Engineer.</Paragraph>
         <Paragraph>My motivation and inspiration often comes from people around me.</Paragraph>
       </Intro>

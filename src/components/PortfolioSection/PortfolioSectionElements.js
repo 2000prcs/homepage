@@ -2,7 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   color: #ffffff;
-  width: 85%;
+  width: 40%;
+
+  @media screen and (max-width: 1440px) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 75%;
+  }
 `
 
 export const Content = styled.div`
@@ -11,6 +19,7 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h1`
+  font-size: clamp(25px,3vw,40px);
   margin-bottom: 20px;
   width: 100%;
 `
@@ -43,24 +52,7 @@ export const Block = styled.div`
     background-image: ${({ gif }) => `url(${gif})`};
     width: 280px;
   }
-
-  /* @media screen and (min-width: 1440px) {
-    width: 33%;
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 30%;
-    width: auto;
-  } */
 `
-
-// export const Overlay = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   border-radius: 10%;
-//   background-color: rgba(0, 0, 0, 0.4);
-//   padding: 40px;
-// `
 
 export const SideContent = styled.div`
   display: flex;

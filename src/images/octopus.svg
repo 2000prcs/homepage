@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
    height="297mm"
    viewBox="0 0 210 297"
    version="1.1"
    id="svg3576"
-   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
-   sodipodi:docname="octopus.svg">
+>
   <defs
      id="defs3570">
     <clipPath
@@ -58,35 +50,18 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="400"
-     inkscape:cy="560"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     inkscape:window-width="1252"
-     inkscape:window-height="1005"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0" />
+     showgrid="false" />
   <metadata
      id="metadata3573">
     <rdf:RDF>
-      <cc:Work
-         rdf:about="">
+      <cc:Work>
         <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:type />
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1">
     <path
        d="m 37.888678,105.84528 c -0.612422,0.11677 -5.562953,0.71332 -9.425164,2.21474 -3.862212,1.50142 -6.985706,1.30669 -8.512529,4.70394 -1.245658,2.77213 0.183445,5.04896 1.798109,6.20677 1.614311,1.15817 3.753203,1.46368 4.875742,0.55633 1.122539,-0.90769 1.37795,-2.27788 1.37795,-2.27788 0,0 -3.02507,0.98213 -3.762375,-0.0356 -0.736601,-1.01777 -0.209551,-2.71463 1.097844,-3.57858 1.307395,-0.86431 6.95325,-2.20839 11.17847,-3.03989 4.225573,-0.8315 6.233231,-4.13208 6.233231,-4.13208 l -4.861278,-0.61772"

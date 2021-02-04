@@ -2,7 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   color: #ffffff;
-  width: 85%;
+  width: 40%;
+
+  @media screen and (max-width: 1440px) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 75%;
+  }
 `
 
 export const Intro = styled.div`
@@ -18,6 +26,7 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h1`
+  font-size: clamp(25px,3vw,40px);
   margin-bottom: 20px;
   width: 100%;
 `

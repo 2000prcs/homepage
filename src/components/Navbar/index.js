@@ -7,8 +7,6 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
   MobileIcon
 } from './NavbarElements';
 
@@ -34,7 +32,6 @@ const NavBar = ({ scrollPage, toggle }) => {
           </NavMenu>
         </NavbarContainer>
       </Nav>
-      {/* <div style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0),rgba(47, 52, 172, 0))'}}></div> */}
     </>
   )
 }

@@ -4,10 +4,9 @@ export const Container = styled.section`
   align-items: center;
   color: #ffffff;
   display: flex;
-  font-size: 30px;
   flex-direction: column;
   justify-content: center;
-  width: 85%;
+  font-size: clamp(25px,4vw,40px);
 `
 
 export const Content = styled.div`
