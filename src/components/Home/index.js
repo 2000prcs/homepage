@@ -34,7 +34,6 @@ import MermaidFourImg from '../../images/mermaid4.svg';
 import MermaidFiveImg from '../../images/mermaid5.svg';
 import MermaidSixImg from '../../images/mermaid6.svg';
 
-
 import BackgroundImg from '../../images/underwater.png';
 
 const Home = () => {
@@ -80,25 +79,25 @@ const Home = () => {
         <FishOneImg style={{ display: 'block', width: '50%', marginLeft: '-8%' }} />
         <FishTwoImg style={{ display: 'block', width: '50%', marginLeft: '-5%', marginTop: '-23%' }} />
         <FuguImg style={{ display: 'block', width: '50%', marginLeft: '-5%', marginTop: '-75%' }} />
-        <WaleImg style={{ display: 'block', width: '50%', marginLeft: '50%', marginTop: '37%' }} />
+        <WaleImg style={{ display: 'block', width: '50%', marginLeft: '58%', marginTop: '37%' }} />
         <DolphinImg style={{ display: 'block', width: '50%', marginLeft: '15%', marginTop: '16%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0.2}>
         <RayImg style={{ display: 'block', width: '50%', marginLeft: '17%', marginTop: '-40%' }} />
-        <MermaidOneImg style={{ display: 'block', width: '15%', marginLeft: '48%', marginTop: '-17%' }} />        
+        <MermaidOneImg style={{ display: 'block', width: '15%', marginLeft: '55%', marginTop: '-17%' }} />        
         <SeaHorseImg style={{ display: 'block', width: '50%', marginLeft: '-15%' }} />
-        <BabySharkImg style={{ display: 'block', width: '50%', marginLeft: '25%', marginTop: '-15%' }} />
+        <BabySharkImg style={{ display: 'block', width: '50%', marginLeft: '25%', marginTop: '-25%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0.8}>
         <CrabImg style={{ display: 'block', width: '50%', marginLeft: '8%', marginTop: '-21%' }} />
-        <MermaidTwoImg style={{ display: 'block', width: '15%', marginLeft: '18%', marginTop: '-10%' }} />
+        <MermaidTwoImg style={{ display: 'block', width: '15%', marginLeft: '10%', marginTop: '-20%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1.75} speed={0.5}>
-        <OctopusImg style={{ display: 'block', width: '50%', marginLeft: '30%', marginTop: '-16%' }} />
-        <MermaidFiveImg style={{ display: 'block', width: '15%', marginLeft: '70%', marginTop: '-13%' }} />
+        <OctopusImg style={{ display: 'block', width: '50%', marginLeft: '30%', marginTop: '-12%' }} />
+        <MermaidFiveImg style={{ display: 'block', width: '15%', marginLeft: '70%', marginTop: '-5%' }} />
         <MermaidThreeImg style={{ display: 'block', width: '15%', marginLeft: '21%', marginTop: '5%' }} />
       </ParallaxLayer>
 
