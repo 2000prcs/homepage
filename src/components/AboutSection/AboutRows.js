@@ -1,7 +1,7 @@
 import React from 'react';
 import { Block, Image, Row } from './AboutSectionElements';
 
-import icon from '../../icons/code-flat.svg';
+import Icon from '../../icons/code-flat.svg';
 
 const PortfolioRows = ({ rowData, withIcon }) => {
 
@@ -9,7 +9,7 @@ const PortfolioRows = ({ rowData, withIcon }) => {
     <Row>
       {rowData.map(data =>
         <Block>
-          {withIcon && <Image src={icon} style={{ width: '30px' }} />}
+          {withIcon && <Icon style={{ width: '30px' }} />}
           {data.text}
         </Block>
       )}

@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
    height="297mm"
    viewBox="0 0 210 297"
    version="1.1"
    id="svg10945"
-   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
-   sodipodi:docname="ammonite.svg">
+>
   <defs
      id="defs10939" />
   <sodipodi:namedview
@@ -21,35 +14,19 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="400"
-     inkscape:cy="560"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1252"
-     inkscape:window-height="1005"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0" />
+   />
   <metadata
      id="metadata10942">
     <rdf:RDF>
-      <cc:Work
-         rdf:about="">
+      <cc:Work>
         <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:type />
         <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1">
     <path
        d="m 115.26394,200.1239 c 0,0 -0.50447,-0.28398 -1.14652,0.65758 -0.64559,0.94121 -1.28412,3.1817 -1.49578,4.0633 -0.21167,0.88159 -0.73025,3.19934 -0.77611,3.28894 -0.0459,0.0896 0.43039,1.42699 0.55033,2.18299 0.11994,0.756 0.16581,1.14194 0.16581,1.14194 0,0 0.58208,0.0145 0.8255,-0.32067 0.24694,-0.33479 1.26294,-2.48708 1.60161,-3.74262 0.33866,-1.25518 0.96661,-3.28013 0.96661,-4.2732 -0.004,-0.99272 0.0529,-2.09162 -0.23989,-2.49343 -0.29281,-0.40217 -0.11995,-0.48049 -0.45156,-0.50483"
