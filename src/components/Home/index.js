@@ -85,7 +85,7 @@ const Home = () => {
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0.2}>
-        <RayImg style={{ display: 'block', width: '50%', marginLeft: '17%', marginTop: '-48%' }} />
+        <RayImg style={{ display: 'block', width: '50%', marginLeft: '17%', marginTop: '-40%' }} />
         <MermaidOneImg style={{ display: 'block', width: '15%', marginLeft: '48%', marginTop: '-17%' }} />        
         <SeaHorseImg style={{ display: 'block', width: '50%', marginLeft: '-15%' }} />
         <BabySharkImg style={{ display: 'block', width: '50%', marginLeft: '25%', marginTop: '-15%' }} />

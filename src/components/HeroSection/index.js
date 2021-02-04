@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Heading, Icon } from './HeroSectionElements';
+import { Container } from './HeroSectionElements';
 
-const HeroSection = ({ scrollPage, pageNumber }) => {
+const HeroSection = () => {
   return (
     <Container>
-      <Heading>Hi I'm Mo 😊👋</Heading>
-      <Heading>I'm a Software Engineer 💻</Heading>
+      <h1>Hi I'm Mo 😊👋</h1>
+      <h1>I'm a Software Engineer 💻</h1>
     </Container>
   );
 };

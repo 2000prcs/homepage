@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   color: #ffffff;
-  width: 85%;
+  width: 40%;
 `
 
 export const Content = styled.div`
@@ -11,6 +11,7 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h1`
+  font-size: clamp(25px,3vw,40px);
   margin-bottom: 20px;
   width: 100%;
 `
