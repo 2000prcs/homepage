@@ -14,6 +14,7 @@ const ContactSection = () => {
             name={data.name}
             Icon={data.icon}
             url={data.url}
+            key={data.name}
           />
         )}
       </Content>

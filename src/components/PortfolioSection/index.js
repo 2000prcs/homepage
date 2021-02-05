@@ -18,6 +18,7 @@ const PortfolioSection = () => {
             name={data.name}
             repo={data.repo}
             technologies={data.technologies}
+            key={data.name}
           />
         )}
       </Content>
