@@ -1,6 +1,12 @@
 import React from 'react';
 import {
-  Block, BlockContainer, SideContent, Description, GithubIcon, Name, Technologies
+  Block,
+  BlockContainer,
+  Description, 
+  Name,
+  SideContent,
+  StyledGithubIcon,
+  Technologies
 } from './PortfolioSectionElements';
 
 const PortfolioBlock = ({ description, gif, image, name, technologies, repo }) => {
@@ -12,7 +18,7 @@ const PortfolioBlock = ({ description, gif, image, name, technologies, repo }) =
           <Technologies>{technologies}</Technologies>
           <Description>{description}</Description>
           <a href={repo} target="_blank" rel="noreferrer">
-            <GithubIcon />
+            <StyledGithubIcon />
           </a>
         </SideContent>
     </BlockContainer>

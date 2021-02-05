@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Icon from '../../icons/github.svg';
+import GithubIcon from '../../icons/github.svg';
 
 export const Container = styled.section`
   color: #ffffff;
@@ -50,7 +50,7 @@ export const Description = styled.div`
   margin-bottom: 20px;
 `
 
-export const GithubIcon = styled(Icon)`
+export const StyledGithubIcon = styled(GithubIcon)`
   width: 40px;
   
   @media screen and (max-width: 768px) {

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import MenuIcon from '../../icons/menu.svg';
 
 export const Nav = styled.nav`
   align-items: center;
@@ -38,18 +39,20 @@ export const NavLogo = styled.div`
   text-decoration: none;
 `
 
+export const StyledMenuIcon = styled(MenuIcon)`
+  width: 40px;
+  height: 40px;
+`
+
 export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    align-items: center;
+    display: flex;
+    color: #ffffff;
     cursor: pointer;
-    color: #fff;
+    font-size: 1.8rem;
   }
 `
 

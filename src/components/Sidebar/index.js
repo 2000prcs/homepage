@@ -1,15 +1,15 @@
 import React from 'react';
 import {
+  IconContainer,
   SidebarContainer,
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  Icon,
-  CloseIcon
+  StyledCloseIcon
 } from './SidebarElements';
 
 const Sidebar = ({ isOpen, scrollPage, toggle }) => {
-
+  
   const handleClick = (pageNumber) => {
     scrollPage(pageNumber);
     toggle();
@@ -17,9 +17,9 @@ const Sidebar = ({ isOpen, scrollPage, toggle }) => {
 
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
-        <CloseIcon />
-      </Icon>
+      <IconContainer onClick={toggle}>
+        <StyledCloseIcon />
+      </IconContainer>
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink onClick={() => handleClick(1)}>

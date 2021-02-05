@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaBars } from 'react-icons/fa';
 import {
   Nav,
   NavbarContainer,
@@ -7,7 +6,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  MobileIcon
+  MobileIcon,
+  StyledMenuIcon
 } from './NavbarElements';
 
 const NavBar = ({ scrollPage, toggle }) => {
@@ -17,7 +17,7 @@ const NavBar = ({ scrollPage, toggle }) => {
         <NavbarContainer>
           <NavLogo onClick={() => scrollPage(0)}>Home</NavLogo>
           <MobileIcon onClick={toggle}>
-            <FaBars />
+            <StyledMenuIcon />
           </MobileIcon>
           <NavMenu>
             <NavItem>

@@ -1,13 +1,12 @@
 import styled from 'styled-components';
-import { FaTimes } from 'react-icons/fa';
+import CloseIcon from '../../icons/x.svg';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: transparent;
-  backdrop-filter: saturate(100%) blur(10px);
+  background-color: #012340;
   display: grid;
   align-items: center;
   top: 0;
@@ -17,7 +16,7 @@ export const SidebarContainer = styled.aside`
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 
-export const Icon = styled.div`
+export const IconContainer = styled.div`
   position: absolute;
   top: 1.2rem;
   right: 1.5rem;
@@ -27,8 +26,10 @@ export const Icon = styled.div`
   outline: none;
 `
 
-export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+export const StyledCloseIcon = styled(CloseIcon)`
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
 `
 
 export const SidebarWrapper = styled.div`
@@ -48,7 +49,7 @@ export const SidebarMenu = styled.ul`
 
 export const SidebarLink = styled.div`
   align-items: center;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
   display: flex;
   font-size: 2rem;
@@ -60,6 +61,6 @@ export const SidebarLink = styled.div`
   transition: 0.2s ease-in-out;
 
   &:hover {
-    color: #ffffff;
+    color: #000000;
   }
 `
