@@ -18,23 +18,6 @@ export const Content = styled.div`
   flex-direction: column;
 `
 
-export const Title = styled.h1`
-  font-size: clamp(25px,3vw,40px);
-  margin-bottom: 20px;
-  width: 100%;
-`
-
-export const BlockContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
-`
-
 export const Block = styled.div`
   background-image: ${({ image }) => `url(${image})`};
   background-size: cover;
@@ -54,6 +37,21 @@ export const Block = styled.div`
   }
 `
 
+export const BlockContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
+export const Description = styled.div`
+  margin-bottom: 20px;
+`
+
 export const SideContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -67,6 +65,9 @@ export const Technologies = styled.div`
   margin: 20px 0;
 `
 
-export const Description = styled.div`
+export const Title = styled.h1`
+  font-size: clamp(25px,3vw,40px);
   margin-bottom: 20px;
+  width: 100%;
 `
+

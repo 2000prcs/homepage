@@ -13,7 +13,7 @@ const PortfolioBlock = ({ name, description, gif, image, technologies, repo }) =
           <Name>{name}</Name>
           <Technologies>{technologies}</Technologies>
           <Description>{description}</Description>
-          <a href={repo} target="_blank">
+          <a href={repo} target="_blank" rel="noreferrer">
             <GithubIcon style={{ width: '30px' }}/>
           </a>
         </SideContent>
