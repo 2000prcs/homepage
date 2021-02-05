@@ -1,97 +1,31 @@
-
-
 export const TechnologiesData = [
   [
-    {
-      text: 'JavaScript (ES6+)',
-      // image: pets,
-    },
-    {
-      text: 'React',
-      // image: game,
-    },
-    {
-      text: 'Redux',
-      // image: travel,
-    },
-    {
-      text: 'Node.js',
-      // image: game,
-    },
-    {
-      text: 'HTML & CSS/SCSS',
-      // image: travel,
-    },
+    '✨ JavaScript (ES6+)',
+    '✨ React/Redux',
+    '✨ React Native',
+    '✨ Node.js',
+    '✨ GraphQL',
   ],
   [
-    {
-      text: 'React Native',
-      // image: music,
-    },
-    {
-      text: 'Python',
-      // image: piano,
-    },
-    {
-      text: 'Django',
-      // image: books,
-    },
-    {
-      text: 'PostgreSQL',
-      // image: piano,
-    },
-    {
-      text: 'AWS EC2, S3, RDS, DocumentDB',
-      // image: books,
-    },
+    '✨ Python',
+    '✨ Django',
+    '✨ AWS',
+    '✨ PostgreSQL',
+    '✨ Docker',
   ],
-  [
-    {
-      text: 'Docker',
-      // image: music,
-    },
-    {
-      text: 'RabbitMQ',
-      // image: piano,
-    },
-    {
-      text: 'Celery',
-      // image: books,
-    },
-    {
-      text: 'Redis',
-      // image: piano,
-    },
-    {
-      text: 'MongoDB',
-      // image: books,
-    },
-  ]
 ];
 
 export const InterestsData = [
   [
-    {
-      text: '🐱🐶 My furry babies',
-    },
-    {
-      text: '🎮🎲 Game',
-    },
+    '🐱🐶 My furry babies',
+    '🎮🎲 Game',
   ],
   [
-    {
-      text: '✈️🧳 Travel',
-    },
-    {
-      text: '🎶💃 Music & Dance',
-    },
+    '✈️🧳 Travel',
+    '🎶💃 Music & Dance',
   ],
   [
-    {
-      text: '🎹 Piano',
-    },
-    {
-      text: '🥗🦐🍜🍄🥩🌯 Food',
-    },
+    '🎹 Piano',
+    '🥗🦐🍜🍄🥩🌯 Food',
   ]
 ];

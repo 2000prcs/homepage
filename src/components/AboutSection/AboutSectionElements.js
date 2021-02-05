@@ -13,22 +13,9 @@ export const Container = styled.section`
   }
 `
 
-export const Intro = styled.div`
-  margin-bottom: 20px;
-  width: 100%;
-`
-
-export const Paragraph = styled.p``
-
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-`
-
-export const Title = styled.h1`
-  font-size: clamp(25px,3vw,40px);
-  margin-bottom: 20px;
-  width: 100%;
 `
 
 export const Block = styled.div`
@@ -38,36 +25,39 @@ export const Block = styled.div`
   margin-bottom: 5px;
 `
 
-export const Row = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
+export const Intro = styled.div`
+  margin-bottom: 20px;
+  width: 100%;
 `
 
 export const Image = styled.img`
   margin-right: 5px;
 `
-
-export const Technologies = styled.div`
+export const List = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  font-size: clamp(15px,2vw,22px);
+  justify-content: flex-start;
   margin-bottom: 20px;
 `
 
-export const Interests = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+export const Title = styled.h1`
+  font-size: clamp(25px,3vw,40px);
   margin-bottom: 20px;
+  width: 100%;
 `
 
-export const Text = styled.div`
-  position: relative;
-  right: 0%;
-  top: 100%;
+export const Row = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 25px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 10px;
+  }
+`
+
+export const Paragraph = styled.p`
+  font-size: clamp(17px,2vw,22px);
 `

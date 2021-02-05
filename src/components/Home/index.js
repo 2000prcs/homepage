@@ -71,7 +71,7 @@ const Home = () => {
       <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#012340', opacity: 0.6 }} />
       <ParallaxLayer offset={0} speed={-0.3}>
         <FishClusterImg style={{ display: 'block', width: '50%', marginLeft: '45%', marginTop: '-12%'}} />
-        <TwoFishesImg style={{ display: 'block', width: '50%', marginLeft: '45%', marginTop: '-25%'}} />
+        <TwoFishesImg style={{ display: 'block', width: '50%', marginLeft: '45%', marginTop: '-30%'}} />
         <TurtleImg style={{ display: 'block', width: '50%', marginLeft: '70%', marginTop: '-33%' }} />
       </ParallaxLayer>
       <ParallaxLayer offset={0.3} speed={0.8}
@@ -91,8 +91,8 @@ const Home = () => {
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0.8}>
-        <CrabImg style={{ display: 'block', width: '50%', marginLeft: '8%', marginTop: '-21%' }} />
-        <MermaidTwoImg style={{ display: 'block', width: '15%', marginLeft: '10%', marginTop: '-20%' }} />
+        <CrabImg style={{ display: 'block', width: '50%', marginLeft: '-15%', marginTop: '-21%' }} />
+        <MermaidTwoImg style={{ display: 'block', width: '15%', marginLeft: '15%', marginTop: '-25%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1.75} speed={0.5}>
@@ -102,7 +102,7 @@ const Home = () => {
       </ParallaxLayer>
 
       <ParallaxLayer offset={1.6} speed={-0.1}>
-        <StarFishImg style={{ display: 'block', width: '50%', marginLeft: '40%', marginTop: '-12%' }} />
+        <StarFishImg style={{ display: 'block', width: '50%', marginLeft: '10%', marginTop: '-42%' }} />
         <SquidImg style={{ display: 'block', width: '50%', marginLeft: '40%', marginTop: '2%' }} />
         <AnglerFishImg style={{ display: 'block', width: '50%', marginLeft: '75%', marginTop: '-5%' }} />
       </ParallaxLayer>

@@ -1,15 +1,14 @@
 import React from 'react';
-import AboutRows  from './AboutRows';
-import {
-  Container, Content, Interests, Intro, Technologies, Title, Paragraph
-} from './AboutSectionElements';
+import AboutRow  from './AboutRow';
+import { Container, Content, Intro, List, Title, Paragraph } from './AboutSectionElements';
 import { TechnologiesData, InterestsData } from './AboutData';
 
 const AboutSection = () => {
   return (
     <Container>
       <Intro>
-        <Paragraph><h1>안녕하세요!</h1> Born and raised in South Korea 🇰🇷, moved to the US in 2014.</Paragraph>
+        <Title>안녕하세요!</Title>
+        <Paragraph>Born and raised in South Korea 🇰🇷, moved to the US in 2014.</Paragraph>
         <Paragraph>I love seeing people's happy faces while they're experiencing my creations - it's what led me to be a Software Engineer.</Paragraph>
         <Paragraph>My motivation and inspiration often comes from people around me.</Paragraph>
       </Intro>
@@ -17,15 +16,15 @@ const AboutSection = () => {
         <Title>
           Technologies I've worked with 💎
         </Title>
-        <Technologies>
-          {TechnologiesData.map(rowData => <AboutRows rowData={rowData} withIcon />)}
-        </Technologies>
+        <List>
+          {TechnologiesData.map(rowData => <AboutRow rowData={rowData} />)}
+        </List>
         <Title>
           What I love ❤️
         </Title>
-        <Interests>
-          {InterestsData.map(rowData => <AboutRows rowData={rowData} />)}
-        </Interests>
+        <List>
+          {InterestsData.map(rowData => <AboutRow rowData={rowData} />)}
+        </List>
       </Content>
     </Container>
   );
