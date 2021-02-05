@@ -8,6 +8,10 @@ export const Container = styled.section`
     width: 60%;
   }
 
+  @media screen and (max-width: 1024px) {
+    width: 70%;
+  }
+
   @media screen and (max-width: 768px) {
     width: 75%;
   }
@@ -36,7 +40,7 @@ export const Image = styled.img`
 export const List = styled.div`
   display: flex;
   flex-direction: row;
-  font-size: clamp(15px,2vw,22px);
+  font-size: clamp(13px,2vw,22px);
   justify-content: flex-start;
   margin-bottom: 20px;
 `
