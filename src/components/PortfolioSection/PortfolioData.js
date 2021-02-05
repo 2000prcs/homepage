@@ -10,20 +10,6 @@ const PortfolioData = [
       repo: 'https://github.com/2000prcs/Dear-My-Cat',
       technologies: 'React Native, Redux, React Router'
     },
-    // {
-    //   title: 'Music Visualizer',
-    //   image: '',
-    //   gif: '',
-    //   repo: '',
-    //   technologies: 'Python'
-    // },
-    // {
-    //   title: 'Match-3 Game',
-    //   image: '',
-    //   gif: '',
-    //   repo: '',
-    //   technologies: 'C#, Unity'
-    // }
 ];
 
 export default PortfolioData;

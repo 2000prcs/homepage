@@ -97,7 +97,7 @@ const Home = () => {
 
       <ParallaxLayer offset={1.75} speed={0.5}>
         <OctopusImg style={{ display: 'block', width: '50%', marginLeft: '30%', marginTop: '-12%' }} />
-        <MermaidFiveImg style={{ display: 'block', width: '15%', marginLeft: '70%', marginTop: '-5%' }} />
+        <MermaidFiveImg style={{ display: 'block', width: '15%', marginLeft: '80%', marginTop: '10%' }} />
         <MermaidThreeImg style={{ display: 'block', width: '15%', marginLeft: '21%', marginTop: '5%' }} />
       </ParallaxLayer>
 
