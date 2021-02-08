@@ -1,20 +1,15 @@
 import React from 'react';
+import SidebarLink from './SidebarLink';
 import {
   IconContainer,
   SidebarContainer,
   SidebarWrapper,
   SidebarMenu,
-  SidebarLink,
-  StyledCloseIcon
+  StyledCloseIcon,
 } from './SidebarElements';
+import navData from '../Navbar/NavData';
 
-const Sidebar = ({ isOpen, scrollPage, toggle }) => {
-  
-  const handleClick = (pageNumber) => {
-    scrollPage(pageNumber);
-    toggle();
-  }
-
+const Sidebar = ({ currentPage, isOpen, scrollPage, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <IconContainer onClick={toggle}>
@@ -22,15 +17,16 @@ const Sidebar = ({ isOpen, scrollPage, toggle }) => {
       </IconContainer>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink onClick={() => handleClick(1)}>
-            About
-          </SidebarLink>  
-          <SidebarLink onClick={() => handleClick(2)}>
-            Portfolio
-          </SidebarLink>  
-          <SidebarLink onClick={() => handleClick(3)}>
-            Contact
-          </SidebarLink>  
+          {navData.map((data) => 
+            <SidebarLink
+              isCurrentPage={currentPage === data.pageNumber}
+              pageName={data.pageName}
+              pageNumber={data.pageNumber} 
+              toggle={toggle}
+              scrollPage={scrollPage}
+              key={data.pageNumber}
+            />
+          )}
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

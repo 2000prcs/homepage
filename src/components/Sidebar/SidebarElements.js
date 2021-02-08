@@ -6,7 +6,8 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background-color: #012340;
+  background-color: transparent;
+  backdrop-filter: saturate(100%) blur(10px) brightness(25%);
   display: grid;
   align-items: center;
   top: 0;
@@ -33,7 +34,7 @@ export const StyledCloseIcon = styled(CloseIcon)`
 `
 
 export const SidebarWrapper = styled.div`
-  /* color: #000000; */
+  color: #ffffff;
 `
 
 export const SidebarMenu = styled.ul`
@@ -47,20 +48,20 @@ export const SidebarMenu = styled.ul`
   }
 `
 
-export const SidebarLink = styled.div`
+export const Link = styled.div`
   align-items: center;
-  color: #ffffff;
+  border-bottom: ${({ isCurrentPage }) => (isCurrentPage ? '2px solid #ffffff' : 'none' )};
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   font-size: 2rem;
   font-weight: 600;
   justify-content: center;
   list-style: none;
   text-decoration: none;
-  text-decoration: none;
   transition: 0.2s ease-in-out;
+`
 
-  &:hover {
-    color: #000000;
-  }
+export const Underline = styled.div`
+  height: 3px;
 `

@@ -4,13 +4,13 @@ import {
   NavbarContainer,
   NavLogo,
   NavMenu,
-  NavItem,
-  NavLinks,
   MobileIcon,
   StyledMenuIcon
 } from './NavbarElements';
+import NavItem from './NavItem';
+import navData from './NavData';
 
-const NavBar = ({ scrollPage, toggle }) => {
+const NavBar = ({ currentPage, scrollPage, toggle }) => {
   return (
     <>
       <Nav>
@@ -20,15 +20,15 @@ const NavBar = ({ scrollPage, toggle }) => {
             <StyledMenuIcon />
           </MobileIcon>
           <NavMenu>
-            <NavItem>
-              <NavLinks onClick={() => scrollPage(1)}>About</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks onClick={() => scrollPage(2)}>Portfolio</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks onClick={() => scrollPage(3)}>Contact</NavLinks>
-            </NavItem>
+            {navData.map((data) => 
+              <NavItem
+                isCurrentPage={currentPage === data.pageNumber}
+                pageName={data.pageName}
+                pageNumber={data.pageNumber}
+                scrollPage={scrollPage}
+                key={data.pageNumber}
+              />
+            )}
           </NavMenu>
         </NavbarContainer>
       </Nav>

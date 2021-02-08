@@ -39,8 +39,10 @@ import BackgroundImg from '../../images/underwater.png';
 const Home = () => {
   const parallaxRef = useRef();
   const [isOpen, setIsOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(0);
 
   const scrollPage = (pageNumber) => {
+    setCurrentPage(pageNumber);
     parallaxRef.current.scrollTo(pageNumber);
   };
 
@@ -56,8 +58,8 @@ const Home = () => {
 
   return ( 
     <>
-    <Navbar toggle={toggle} scrollPage={scrollPage} />
-    <Sidebar isOpen={isOpen} toggle={toggle} scrollPage={scrollPage} />
+    <Navbar currentPage={currentPage} toggle={toggle} scrollPage={scrollPage} />
+    <Sidebar currentPage={currentPage} isOpen={isOpen} toggle={toggle} scrollPage={scrollPage} />
     <Parallax pages={4} ref={parallaxRef}>
       <ParallaxLayer
         offset={0}

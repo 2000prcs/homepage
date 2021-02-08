@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutRow  from './AboutRow';
 import { Container, Content, Intro, List, Title, Paragraph } from './AboutSectionElements';
-import { TechnologiesData, InterestsData } from './AboutData';
+import { technologiesData, interestsData } from './AboutData';
 
 const AboutSection = () => {
   return (
@@ -17,13 +17,13 @@ const AboutSection = () => {
           Technologies I've worked with 💎
         </Title>
         <List>
-          {TechnologiesData.map((rowData, index) => <AboutRow rowData={rowData} key={index} />)}
+          {technologiesData.map((rowData, index) => <AboutRow rowData={rowData} key={index} />)}
         </List>
         <Title>
           What I love ❤️
         </Title>
         <List>
-          {InterestsData.map((rowData, index) => <AboutRow rowData={rowData} key={index} />)}
+          {interestsData.map((rowData, index) => <AboutRow rowData={rowData} key={index} />)}
         </List>
       </Content>
     </Container>
