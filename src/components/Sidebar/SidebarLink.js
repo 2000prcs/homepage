@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Underline } from './SidebarElements';
+import { Link, LinkText, Underline } from './SidebarElements';
 import HoverSpring from '../HoverSpring';
 
 const SidebarLink = ({ isCurrentPage, pageName, pageNumber, scrollPage, toggle }) => {
@@ -26,10 +26,10 @@ const SidebarLink = ({ isCurrentPage, pageName, pageNumber, scrollPage, toggle }
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <div>
+              <LinkText isCurrentPage={isCurrentPage}>
                 {pageName}
                 <Underline style={props}></Underline>  
-              </div>
+              </LinkText>
             </Link>
         )}
       </HoverSpring>

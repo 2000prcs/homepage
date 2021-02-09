@@ -50,7 +50,6 @@ export const SidebarMenu = styled.ul`
 
 export const Link = styled.div`
   align-items: center;
-  border-bottom: ${({ isCurrentPage }) => (isCurrentPage ? '2px solid #ffffff' : 'none' )};
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -60,6 +59,10 @@ export const Link = styled.div`
   list-style: none;
   text-decoration: none;
   transition: 0.2s ease-in-out;
+`
+
+export const LinkText = styled.div`
+  border-bottom: ${({ isCurrentPage }) => (isCurrentPage ? '2px solid #ffffff' : 'none' )};
 `
 
 export const Underline = styled.div`
