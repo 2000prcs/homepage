@@ -3,7 +3,7 @@ import linkedinIcon from '../../icons/linkedin.svg';
 import instagramIcon from '../../icons/instagram.svg';
 import emailIcon from '../../icons/email.svg';
 
-const ContactData = [
+const contactData = [
   {
     name: 'github',
     icon: githubIcon,
@@ -26,4 +26,4 @@ const ContactData = [
   },
 ];
 
-export default ContactData;
+export default contactData;

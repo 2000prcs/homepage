@@ -1,4 +1,4 @@
-export const TechnologiesData = [
+export const technologiesData = [
   [
     '✨ JavaScript (ES6+)',
     '✨ React/Redux',
@@ -15,7 +15,7 @@ export const TechnologiesData = [
   ],
 ];
 
-export const InterestsData = [
+export const interestsData = [
   [
     '🐱🐶 My furry babies',
     '🎮🎲 Game',

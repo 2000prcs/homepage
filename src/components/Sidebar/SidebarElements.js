@@ -1,13 +1,13 @@
 import styled from 'styled-components';
-import { FaTimes } from 'react-icons/fa';
+import CloseIcon from '../../icons/x.svg';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: transparent;
-  backdrop-filter: saturate(100%) blur(10px);
+  background-color: transparent;
+  backdrop-filter: saturate(100%) blur(10px) brightness(25%);
   display: grid;
   align-items: center;
   top: 0;
@@ -17,7 +17,7 @@ export const SidebarContainer = styled.aside`
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 
-export const Icon = styled.div`
+export const IconContainer = styled.div`
   position: absolute;
   top: 1.2rem;
   right: 1.5rem;
@@ -27,12 +27,14 @@ export const Icon = styled.div`
   outline: none;
 `
 
-export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+export const StyledCloseIcon = styled(CloseIcon)`
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
 `
 
 export const SidebarWrapper = styled.div`
-  /* color: #000000; */
+  color: #ffffff;
 `
 
 export const SidebarMenu = styled.ul`
@@ -46,20 +48,23 @@ export const SidebarMenu = styled.ul`
   }
 `
 
-export const SidebarLink = styled.div`
+export const Link = styled.div`
   align-items: center;
-  color: #000000;
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   font-size: 2rem;
   font-weight: 600;
   justify-content: center;
   list-style: none;
   text-decoration: none;
-  text-decoration: none;
   transition: 0.2s ease-in-out;
+`
 
-  &:hover {
-    color: #ffffff;
-  }
+export const LinkText = styled.div`
+  border-bottom: ${({ isCurrentPage }) => (isCurrentPage ? '2px solid #ffffff' : 'none' )};
+`
+
+export const Underline = styled.div`
+  height: 3px;
 `

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Title, Content } from './ContactSectionElements';
 import ContactBlock from './ContactBlock';
-import ContactData from './ContactData';
+import contactData from './ContactData';
 
 const ContactSection = () => {
 
@@ -9,11 +9,12 @@ const ContactSection = () => {
     <Container>
       <Title>Contact Me!</Title>
       <Content>
-        {ContactData.map((data) => 
+        {contactData.map((data) => 
           <ContactBlock
             name={data.name}
             Icon={data.icon}
             url={data.url}
+            key={data.name}
           />
         )}
       </Content>

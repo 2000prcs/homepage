@@ -1,4 +1,10 @@
 import styled from 'styled-components';
+import MenuIcon from '../../icons/menu.svg';
+
+export const Item = styled.li`
+  display: flex;
+  margin-right: 2.5rem;
+`
 
 export const Nav = styled.nav`
   align-items: center;
@@ -38,21 +44,6 @@ export const NavLogo = styled.div`
   text-decoration: none;
 `
 
-export const MobileIcon = styled.div`
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #fff;
-  }
-`
-
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
@@ -65,20 +56,34 @@ export const NavMenu = styled.ul`
   }
 `
 
-export const NavItem = styled.li`
-  height: 80px;
+export const NavLinks = styled.div`
+  align-items: center;
+  border-bottom: ${({ isCurrentPage }) => (isCurrentPage ? '2px solid #ffffff' : 'none' )};
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
 `
 
-export const NavLinks = styled.div`
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 2rem;
-  height: 100%;
-  cursor: pointer;
+export const MobileIcon = styled.div`
+  display: none;
 
-  &.active {
-    border-bottom: 3px solid #f2acb9;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    display: flex;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.8rem;
   }
+`
+
+export const StyledMenuIcon = styled(MenuIcon)`
+  width: 40px;
+  height: 40px;
+`
+
+export const Underline = styled.div`
+  height: 2px;
 `

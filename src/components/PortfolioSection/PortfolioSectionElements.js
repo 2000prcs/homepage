@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import GithubIcon from '../../icons/github.svg';
 
 export const Container = styled.section`
   color: #ffffff;
@@ -6,10 +7,6 @@ export const Container = styled.section`
 
   @media screen and (max-width: 1440px) {
     width: 60%;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 75%;
   }
 `
 
@@ -49,19 +46,37 @@ export const BlockContainer = styled.div`
 `
 
 export const Description = styled.div`
+  font-size: clamp(13px,2vw,22px);
   margin-bottom: 20px;
+`
+
+export const StyledGithubIcon = styled(GithubIcon)`
+  width: 40px;
+  
+  @media screen and (max-width: 768px) {
+    width: 30px;
+  }
 `
 
 export const SideContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 10px;
   width: 60%;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+    width: 80%;
+  }
 `
 
-export const Name = styled.h1``
+export const Name = styled.h1`
+  font-size: clamp(25px,3vw,35px);
+`
 
 export const Technologies = styled.div`
+  font-size: clamp(13px,2vw,22px);
   margin: 20px 0;
 `
 
