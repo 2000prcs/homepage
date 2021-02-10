@@ -32,6 +32,6 @@ export const interests = [
   ],
   [
     '🎹 Piano',
-    '🥗🦐🍜🍄🥩🌯 Food',
+    '🍄🥩 Food',
   ]
 ];

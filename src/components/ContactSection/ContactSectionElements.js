@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const Block = styled.div`
+  display: flex;
+`
+
 export const Container = styled.section`
   align-items: center;
   color: #ffffff;
@@ -18,8 +22,4 @@ export const Title = styled.h1`
   margin-bottom: 20px;
   text-align: center;
   width: 100%;
-`
-
-export const Block = styled.div`
-  display: flex;
 `

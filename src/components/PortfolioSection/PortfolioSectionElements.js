@@ -32,6 +32,11 @@ export const Block = styled.div`
     background-image: ${({ gif }) => `url(${gif})`};
     width: 280px;
   }
+
+  @media screen and (max-width: 425px) {
+    width: 150px;
+    height: 300px;
+  }
 `
 
 export const BlockContainer = styled.div`
@@ -67,7 +72,7 @@ export const SideContent = styled.div`
 
   @media screen and (max-width: 768px) {
     margin-top: 10px;
-    width: 80%;
+    width: 100%;
   }
 `
 
@@ -77,6 +82,7 @@ export const Name = styled.h1`
 
 export const Technologies = styled.div`
   font-size: clamp(13px,2vw,22px);
+  font-style: italic;
   margin: 20px 0;
 `
 
