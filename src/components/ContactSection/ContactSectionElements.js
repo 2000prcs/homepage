@@ -1,4 +1,8 @@
 import styled from 'styled-components';
+import GithubIcon from '../../icons/github.svg';
+import LinkedinIcon from '../../icons/linkedin.svg';
+import InstagramIcon from '../../icons/instagram.svg';
+import EmailIcon from '../../icons/email.svg';
 
 export const Block = styled.div`
   display: flex;
@@ -22,4 +26,28 @@ export const Title = styled.h1`
   margin-bottom: 20px;
   text-align: center;
   width: 100%;
+`
+
+const StyledIcon = `
+  width: 100%;
+
+  @media screen and (max-width: 425px) {
+    width: 65%;
+  }
+`
+
+export const StyledGithubIcon = styled(GithubIcon)`
+  ${StyledIcon}
+`
+
+export const StyledLinkedinIcon = styled(LinkedinIcon)`
+  ${StyledIcon}
+`
+
+export const StyledInstagramIcon = styled(InstagramIcon)`
+  ${StyledIcon}
+`
+
+export const StyledEmailIcon = styled(EmailIcon)`
+  ${StyledIcon}
 `
