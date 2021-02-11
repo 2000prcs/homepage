@@ -6,6 +6,8 @@ import EmailIcon from '../../icons/email.svg';
 
 export const Block = styled.div`
   display: flex;
+  margin-right: 5px;
+  text-align: center;
 `
 
 export const Container = styled.section`
@@ -29,7 +31,7 @@ export const Title = styled.h1`
 `
 
 const StyledIcon = `
-  width: 100%;
+  width: 90%;
 
   @media screen and (max-width: 425px) {
     width: 65%;

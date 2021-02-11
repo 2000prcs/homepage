@@ -8,6 +8,10 @@ export const Container = styled.section`
   @media screen and (max-width: 1440px) {
     width: 60%;
   }
+
+  @media screen and (max-width: 425px) {
+    width: 80%;
+  }
 `
 
 export const Content = styled.div`
