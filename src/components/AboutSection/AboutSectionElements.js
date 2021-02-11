@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
+export const Block = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+`
+
 export const Container = styled.section`
   color: #ffffff;
+  padding-top: 80px;
   width: 40%;
 
   @media screen and (max-width: 1440px) {
@@ -20,13 +28,6 @@ export const Container = styled.section`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-`
-
-export const Block = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 5px;
 `
 
 export const Intro = styled.div`
