@@ -5,6 +5,7 @@ import {
   NavLogo,
   NavMenu,
   MobileIcon,
+  StyledHomeIcon,
   StyledMenuIcon
 } from './NavbarElements';
 import NavItem from './NavItem';
@@ -15,7 +16,9 @@ const NavBar = ({ currentPage, scrollPage, toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo onClick={() => scrollPage(0)}>Home</NavLogo>
+          <NavLogo onClick={() => scrollPage(0)}>
+            <StyledHomeIcon />
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <StyledMenuIcon />
           </MobileIcon>

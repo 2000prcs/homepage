@@ -35,6 +35,10 @@ export const Block = styled.div`
   &:hover {
     background-image: ${({ gif }) => `url(${gif})`};
     width: 280px;
+
+    @media screen and (max-width: 425px) {
+      width: 180px;
+    }
   }
 
   @media screen and (max-width: 425px) {
