@@ -8,6 +8,10 @@ export const Container = styled.section`
   @media screen and (max-width: 1440px) {
     width: 60%;
   }
+
+  @media screen and (max-width: 425px) {
+    width: 80%;
+  }
 `
 
 export const Content = styled.div`
@@ -31,6 +35,15 @@ export const Block = styled.div`
   &:hover {
     background-image: ${({ gif }) => `url(${gif})`};
     width: 280px;
+
+    @media screen and (max-width: 425px) {
+      width: 180px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 150px;
+    height: 300px;
   }
 `
 
@@ -67,7 +80,7 @@ export const SideContent = styled.div`
 
   @media screen and (max-width: 768px) {
     margin-top: 10px;
-    width: 80%;
+    width: 100%;
   }
 `
 
@@ -77,6 +90,7 @@ export const Name = styled.h1`
 
 export const Technologies = styled.div`
   font-size: clamp(13px,2vw,22px);
+  font-style: italic;
   margin: 20px 0;
 `
 

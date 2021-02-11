@@ -1,27 +1,30 @@
-import githubIcon from '../../icons/github.svg';
-import linkedinIcon from '../../icons/linkedin.svg';
-import instagramIcon from '../../icons/instagram.svg';
-import emailIcon from '../../icons/email.svg';
+import React from 'react';
+import { 
+  StyledGithubIcon,
+  StyledLinkedinIcon,
+  StyledInstagramIcon,
+  StyledEmailIcon
+} from './ContactSectionElements';
 
 const contactData = [
   {
     name: 'github',
-    icon: githubIcon,
+    icon: <StyledGithubIcon />,
     url: 'https://github.com/2000prcs'
   },
   {
     name: 'linkedin',
-    icon: linkedinIcon,
+    icon: <StyledLinkedinIcon />,
     url: 'https://www.linkedin.com/in/moyeonglee'
   },
   {
     name: 'instagram',
-    icon: instagramIcon,
+    icon: <StyledInstagramIcon />,
     url: 'https://www.instagram.com/momo_sf'
   },
   {
     name: 'email',
-    icon: emailIcon,
+    icon: <StyledEmailIcon />,
     url: 'mailto:2000prcs@gmail.com'
   },
 ];

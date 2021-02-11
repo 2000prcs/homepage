@@ -6,8 +6,7 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background-color: transparent;
-  backdrop-filter: saturate(100%) blur(10px) brightness(25%);
+  background-color: rgba(16, 46, 65, 0.95);
   display: grid;
   align-items: center;
   top: 0;

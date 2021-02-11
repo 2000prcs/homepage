@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import HomeIcon from '../../icons/home.svg';
 import MenuIcon from '../../icons/menu.svg';
 
 export const Item = styled.li`
@@ -77,6 +78,11 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     font-size: 1.8rem;
   }
+`
+
+export const StyledHomeIcon = styled(HomeIcon)`
+  width: 40px;
+  height: 40px;
 `
 
 export const StyledMenuIcon = styled(MenuIcon)`

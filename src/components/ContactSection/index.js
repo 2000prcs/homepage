@@ -12,7 +12,7 @@ const ContactSection = () => {
         {contactData.map((data) => 
           <ContactBlock
             name={data.name}
-            Icon={data.icon}
+            icon={data.icon}
             url={data.url}
             key={data.name}
           />

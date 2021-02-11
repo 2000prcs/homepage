@@ -1,4 +1,14 @@
 import styled from 'styled-components';
+import GithubIcon from '../../icons/github.svg';
+import LinkedinIcon from '../../icons/linkedin.svg';
+import InstagramIcon from '../../icons/instagram.svg';
+import EmailIcon from '../../icons/email.svg';
+
+export const Block = styled.div`
+  display: flex;
+  margin-right: 5px;
+  text-align: center;
+`
 
 export const Container = styled.section`
   align-items: center;
@@ -20,6 +30,26 @@ export const Title = styled.h1`
   width: 100%;
 `
 
-export const Block = styled.div`
-  display: flex;
+const StyledIcon = `
+  width: 90%;
+
+  @media screen and (max-width: 425px) {
+    width: 65%;
+  }
+`
+
+export const StyledGithubIcon = styled(GithubIcon)`
+  ${StyledIcon}
+`
+
+export const StyledLinkedinIcon = styled(LinkedinIcon)`
+  ${StyledIcon}
+`
+
+export const StyledInstagramIcon = styled(InstagramIcon)`
+  ${StyledIcon}
+`
+
+export const StyledEmailIcon = styled(EmailIcon)`
+  ${StyledIcon}
 `
