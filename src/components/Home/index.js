@@ -15,7 +15,6 @@ import JellyfishImg from '../../images/jellyfish.svg';
 import CrabImg from '../../images/crab.svg';
 import DolphinImg from '../../images/dolphin.svg';
 import OctopusImg from '../../images/octopus.svg';
-import RayImg from '../../images/ray.svg';
 import SeaHorseImg from '../../images/sea_horse.svg';
 import StarFishImg from '../../images/starfish.svg';
 import SquidImg from '../../images/squid.svg';
@@ -25,14 +24,11 @@ import EllImg from '../../images/ell.svg';
 import LobsterImg from '../../images/lobster.svg';
 import AnglerFishImg from '../../images/angler_fish.svg';
 import FuguImg from '../../images/fugu.svg';
-import AmmoniteImg from '../../images/ammonite.svg';
 import BabySharkImg from '../../images/baby_shark.svg';
 import MermaidOneImg from '../../images/mermaid1.svg';
 import MermaidTwoImg from '../../images/mermaid2.svg';
 import MermaidThreeImg from '../../images/mermaid3.svg';
 import MermaidFourImg from '../../images/mermaid4.svg';
-import MermaidFiveImg from '../../images/mermaid5.svg';
-import MermaidSixImg from '../../images/mermaid6.svg';
 
 import BackgroundImg from '../../images/underwater.png';
 
@@ -72,53 +68,57 @@ const Home = () => {
       <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#0367a6', opacity: 0.6 }} />
       <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#012340', opacity: 0.6 }} />
       <ParallaxLayer offset={0} speed={-0.3}>
-        <FishClusterImg style={{ display: 'block', width: '50%', marginLeft: '45%', marginTop: '-12%'}} />
-        <TwoFishesImg style={{ display: 'block', width: '50%', marginLeft: '45%', marginTop: '-30%'}} />
-        <TurtleImg style={{ display: 'block', width: '50%', marginLeft: '70%', marginTop: '-33%' }} />
+        <FishClusterImg style={{ display: 'block', width: '50%', marginLeft: '55%', marginTop: '-12%'}} />
+        <TwoFishesImg style={{ display: 'block', width: '50%', marginLeft: '60%', marginTop: '-30%'}} />
       </ParallaxLayer>
-      <ParallaxLayer offset={0.3} speed={0.8}
-      >
-        <FishOneImg style={{ display: 'block', width: '50%', marginLeft: '-8%' }} />
-        <FishTwoImg style={{ display: 'block', width: '50%', marginLeft: '-5%', marginTop: '-23%' }} />
-        <FuguImg style={{ display: 'block', width: '50%', marginLeft: '-5%', marginTop: '-75%' }} />
-        <WaleImg style={{ display: 'block', width: '50%', marginLeft: '58%', marginTop: '37%' }} />
-        <DolphinImg style={{ display: 'block', width: '50%', marginLeft: '15%', marginTop: '16%' }} />
+      <ParallaxLayer offset={0.3} speed={0.3}>
+        <TurtleImg style={{ display: 'block', width: '50%', marginLeft: '0%', marginTop: '10%' }} />
+        <FuguImg style={{ display: 'block', width: '50%', marginLeft: '5%', marginTop: '-30%' }} />
+        <DolphinImg style={{ display: 'block', width: '50%', marginLeft: '0%', marginTop: '70%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={0.3} speed={0.8}>
+        <FishOneImg style={{ display: 'block', width: '50%', marginLeft: '-5%', marginTop: '15%' }} />
+        <FishTwoImg style={{ display: 'block', width: '50%', marginLeft: '50%', marginTop: '-23%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={0.5} speed={0.5}>
+        <WaleImg style={{ display: 'block', width: '50%', marginLeft: '5%', marginTop: '10%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0.2}>
-        <RayImg style={{ display: 'block', width: '50%', marginLeft: '17%', marginTop: '-40%' }} />
-        <MermaidOneImg style={{ display: 'block', width: '15%', marginLeft: '55%', marginTop: '-17%' }} />        
-        <SeaHorseImg style={{ display: 'block', width: '50%', marginLeft: '-15%' }} />
-        <BabySharkImg style={{ display: 'block', width: '50%', marginLeft: '25%', marginTop: '-25%' }} />
+        <SeaHorseImg style={{ display: 'block', width: '50%', marginLeft: '50%', marginTop: '35%' }} />
+        <BabySharkImg style={{ display: 'block', width: '50%', marginLeft: '30%', marginTop: '-30%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0.8}>
         <CrabImg style={{ display: 'block', width: '50%', marginLeft: '-15%', marginTop: '-21%' }} />
-        <MermaidTwoImg style={{ display: 'block', width: '15%', marginLeft: '15%', marginTop: '-25%' }} />
+        <MermaidTwoImg style={{ display: 'block', width: '15%', marginLeft: '5%', marginTop: '-25%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1.75} speed={0.5}>
-        <OctopusImg style={{ display: 'block', width: '50%', marginLeft: '30%', marginTop: '-12%' }} />
-        <MermaidFiveImg style={{ display: 'block', width: '15%', marginLeft: '80%', marginTop: '10%' }} />
-        <MermaidThreeImg style={{ display: 'block', width: '15%', marginLeft: '21%', marginTop: '5%' }} />
+        <OctopusImg style={{ display: 'block', width: '50%', marginLeft: '30%', marginTop: '15%' }} />
+        <StarFishImg style={{ display: 'block', width: '50%', marginLeft: '40%', marginTop: '10%' }} />
+        <MermaidThreeImg style={{ display: 'block', width: '15%', marginLeft: '70%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1.6} speed={-0.1}>
-        <StarFishImg style={{ display: 'block', width: '50%', marginLeft: '10%', marginTop: '-42%' }} />
         <SquidImg style={{ display: 'block', width: '50%', marginLeft: '40%', marginTop: '2%' }} />
-        <AnglerFishImg style={{ display: 'block', width: '50%', marginLeft: '75%', marginTop: '-5%' }} />
+        <AnglerFishImg style={{ display: 'block', width: '50%', marginLeft: '0%', marginTop: '5%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={2.6} speed={0.4}>
+        <MermaidFourImg style={{ display: 'block', width: '15%', marginLeft: '60%' }} />
         <EllImg style={{ display: 'block', width: '50%', marginLeft: '35%', marginTop: '8%' }} />
-        <LobsterImg style={{ width: '50%', marginTop: '-5%'  }} />
-        <MermaidSixImg style={{ width: '15%', marginLeft: '23%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={2.6} speed={0.3}>
+        <LobsterImg style={{ display: 'block', width: '50%', marginLeft: '10%', marginTop: '0%' }} />
+        <MermaidOneImg style={{ display: 'block', width: '15%', marginLeft: '15%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={2.5} speed={-0.4}>
-        <JellyfishImg style={{ width: '50%', marginLeft: '0%' }} />
-        <AmmoniteImg style={{ width: '50%', marginLeft: '-50%' }} />
-        <MermaidFourImg style={{ display: 'block', width: '15%', marginLeft: '58%', marginTop: '-35%'  }} />
+        <JellyfishImg style={{ display: 'block', width: '50%', marginLeft: '70%' }} />
       </ParallaxLayer>
 
       <ParallaxLayer

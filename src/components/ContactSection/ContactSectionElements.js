@@ -8,6 +8,10 @@ export const Block = styled.div`
   display: flex;
   margin-right: 5px;
   text-align: center;
+
+  @media screen and (max-width: 425px) {
+    margin-right: 0px;
+  }
 `
 
 export const Container = styled.section`

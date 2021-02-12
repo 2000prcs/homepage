@@ -5,9 +5,7 @@ const AboutRow = ({ rowData }) => {
   return (
     <Row>
       {rowData.map(data =>
-        <Block
-          key={data}
-        >
+        <Block key={data}>
           {data}
         </Block>
       )}
