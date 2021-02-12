@@ -73,7 +73,7 @@ const Home = () => {
       </ParallaxLayer>
       <ParallaxLayer offset={0.3} speed={0.3}>
         <TurtleImg style={{ display: 'block', width: '50%', marginLeft: '0%', marginTop: '10%' }} />
-        <FuguImg style={{ display: 'block', width: '50%', marginLeft: '15%', marginTop: '-70%' }} />
+        <FuguImg style={{ display: 'block', width: '50%', marginLeft: '5%', marginTop: '-30%' }} />
         <DolphinImg style={{ display: 'block', width: '50%', marginLeft: '0%', marginTop: '70%' }} />
       </ParallaxLayer>
 
