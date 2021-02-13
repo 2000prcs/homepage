@@ -16,14 +16,10 @@ export const Nav = styled.nav`
   height: 80px;
   justify-content: center;
   top: ${({ isVisible }) => ( isVisible ? '0' : '-80px' )};
-  transition: top 0.1s;
+  transition: 0.6s all ease;
   position: fixed;
   width: 100%;
   z-index: 10;
-
-  @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
-  }
 `
 
 export const NavbarContainer = styled.div`
@@ -84,6 +80,10 @@ export const MobileIcon = styled.div`
 export const StyledHomeIcon = styled(HomeIcon)`
   width: 40px;
   height: 40px;
+
+  &:hover {
+    fill: #eaa9be;
+  }
 `
 
 export const StyledMenuIcon = styled(MenuIcon)`

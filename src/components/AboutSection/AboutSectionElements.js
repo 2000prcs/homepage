@@ -9,7 +9,7 @@ export const Block = styled.div`
 
 export const Container = styled.section`
   color: #ffffff;
-  padding-top: 80px;
+  padding-top: 50px;
   width: 40%;
 
   @media screen and (max-width: 1440px) {

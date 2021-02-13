@@ -37,6 +37,10 @@ export const Title = styled.h1`
 const StyledIcon = `
   width: 90%;
 
+  &:hover {
+    fill: #eaa9be;
+  }
+
   @media screen and (max-width: 425px) {
     width: 65%;
   }
@@ -56,4 +60,9 @@ export const StyledInstagramIcon = styled(InstagramIcon)`
 
 export const StyledEmailIcon = styled(EmailIcon)`
   ${StyledIcon}
+
+  &:hover {
+    fill: none;
+    stroke: #eaa9be;
+  }
 `
