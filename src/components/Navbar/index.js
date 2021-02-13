@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Nav,
   NavbarContainer,
@@ -10,11 +10,26 @@ import {
 } from './NavbarElements';
 import NavItem from './NavItem';
 import navData from './NavData';
+import debounce from '../../helpers/debounce';
 
-const NavBar = ({ currentPage, scrollPage, toggle }) => {
+const NavBar = ({ currentPage, scrollPage, toggle, parallaxRef }) => {
+  const [prevScrollPosition, setPrevScrollPosition] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleScroll = debounce(() => {
+    const currentScrollPosition = parallaxRef.current.container.scrollTop;
+    setIsVisible((prevScrollPosition > currentScrollPosition && prevScrollPosition - currentScrollPosition > 70) || currentScrollPosition < 10);
+    setPrevScrollPosition(currentScrollPosition);
+  }, 100);
+
+  useEffect(() => {
+    if(parallaxRef.current && parallaxRef.current.container) {
+      parallaxRef.current.container.onscroll = () => { handleScroll(); };
+    }
+  }, [isVisible, prevScrollPosition, handleScroll, parallaxRef]);
+
   return (
-    <>
-      <Nav>
+      <Nav isVisible={isVisible}>
         <NavbarContainer>
           <NavLogo onClick={() => scrollPage(0)}>
             <StyledHomeIcon />
@@ -35,7 +50,6 @@ const NavBar = ({ currentPage, scrollPage, toggle }) => {
           </NavMenu>
         </NavbarContainer>
       </Nav>
-    </>
   )
 }
 

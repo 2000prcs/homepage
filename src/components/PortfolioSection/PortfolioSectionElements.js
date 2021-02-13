@@ -62,6 +62,11 @@ export const Description = styled.div`
 
 export const Name = styled.h1`
   font-size: clamp(25px,3vw,35px);
+  margin-right: 10px;
+`
+
+export const Link = styled.a`
+  display: flex;
 `
 
 export const Overlay = styled.div`
@@ -88,10 +93,12 @@ export const StyledPlayIcon = styled(PlayIcon)`
 `
 
 export const StyledGithubIcon = styled(GithubIcon)`
+  height: 40px;
   width: 40px;
   
   @media screen and (max-width: 768px) {
-    width: 30px;
+    height: 25px;
+    width: 25px;
   }
 `
 
@@ -106,6 +113,11 @@ export const SideContent = styled.div`
     margin-top: 10px;
     width: 100%;
   }
+`
+
+export const SubTitle = styled.div`
+  display: flex;
+  align-items: center;
 `
 
 export const Technologies = styled.div`
