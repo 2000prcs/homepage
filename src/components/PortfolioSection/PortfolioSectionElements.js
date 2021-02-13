@@ -38,7 +38,7 @@ export const BlockContainer = styled.div`
 
 export const Container = styled.section`
   color: #ffffff;
-  padding-top: 80px;
+  padding-top: 50px;
   width: 40%;
 
   @media screen and (max-width: 1440px) {
@@ -87,14 +87,18 @@ export const StyledPlayIcon = styled(PlayIcon)`
   height: 25%;
 
   ${Block}:hover & {
-    fill: pink;
-    stroke: gray;
+    fill: #eaa9be;
+    stroke: #bdbcbc;
   }
 `
 
 export const StyledGithubIcon = styled(GithubIcon)`
   height: 40px;
   width: 40px;
+
+  &:hover {
+    fill: #eaa9be;
+  }
   
   @media screen and (max-width: 768px) {
     height: 25px;
