@@ -4,10 +4,12 @@ import {
   BlockContainer,
   Description, 
   Name,
+  Link,
   Overlay,
   SideContent,
   StyledPlayIcon,
   StyledGithubIcon,
+  SubTitle,
   Technologies
 } from './PortfolioSectionElements';
 
@@ -31,12 +33,16 @@ const PortfolioBlock = ({ description, gif, image, name, technologies, repo }) =
         }
       </Block>
       <SideContent>
-        <Name>{name}</Name>
+        <SubTitle>
+          <Name>
+            {name}
+          </Name>
+          <Link href={repo} target="_blank" rel="noreferrer">
+            <StyledGithubIcon />
+          </Link>
+        </SubTitle>
         <Technologies>{technologies}</Technologies>
         <Description>{description}</Description>
-        <a href={repo} target="_blank" rel="noreferrer">
-          <StyledGithubIcon />
-        </a>
       </SideContent>
     </BlockContainer>
   );

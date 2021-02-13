@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, LinkText, Underline } from './SidebarElements';
-import HoverSpring from '../HoverSpring';
+import HoverSpring from '../../helpers/HoverSpring';
 
 const SidebarLink = ({ isCurrentPage, pageName, pageNumber, scrollPage, toggle }) => {
   const [isHover, setIsHover] = useState(false);

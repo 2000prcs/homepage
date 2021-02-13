@@ -54,7 +54,7 @@ const Home = () => {
 
   return ( 
     <>
-    <Navbar currentPage={currentPage} toggle={toggle} scrollPage={scrollPage} />
+    <Navbar currentPage={currentPage} toggle={toggle} scrollPage={scrollPage} parallaxRef={parallaxRef} />
     <Sidebar currentPage={currentPage} isOpen={isOpen} toggle={toggle} scrollPage={scrollPage} />
     <Parallax pages={4} ref={parallaxRef}>
       <ParallaxLayer

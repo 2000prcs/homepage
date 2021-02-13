@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import HoverSpring from '../HoverSpring';
 import { Item, NavLinks, Underline } from './NavbarElements';
+import HoverSpring from '../../helpers/HoverSpring';
 
 const NavItem = ({ isCurrentPage, pageName, pageNumber, scrollPage }) => {
   const [isHover, setIsHover] = useState(false);  

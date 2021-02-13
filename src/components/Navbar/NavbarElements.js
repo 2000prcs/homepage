@@ -15,7 +15,8 @@ export const Nav = styled.nav`
   font-size: clamp(15px,1.3rem,30px);
   height: 80px;
   justify-content: center;
-  top: 0;
+  top: ${({ isVisible }) => ( isVisible ? '0' : '-80px' )};
+  transition: top 0.1s;
   position: fixed;
   width: 100%;
   z-index: 10;
