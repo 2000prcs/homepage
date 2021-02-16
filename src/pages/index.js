@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Home from '../components/Home';
+import Home from '../components/Home/index.tsx';
 
 import '../styles/globalStyles.css';
 

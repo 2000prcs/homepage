@@ -4,7 +4,6 @@ import ContactBlock from './ContactBlock';
 import contactData from './ContactData';
 
 const ContactSection = () => {
-
   return (
     <Container>
       <Title>Contact Me!</Title>

@@ -32,7 +32,7 @@ import MermaidFourImg from '../../images/mermaid4.svg';
 
 import BackgroundImg from '../../images/underwater.png';
 
-const Home = () => {
+const Home:React.FC = () => {
   const parallaxRef = useRef();
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
