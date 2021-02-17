@@ -3,7 +3,7 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import Navbar from '../Navbar';
 import Sidebar from '../Sidebar';
 import HeroSection from '../HeroSection/index';
-import ProfileSection from '../AboutSection';
+import AboutSection from '../AboutSection/index';
 import PortfolioSection from '../PortfolioSection';
 import ContactSection from '../ContactSection';
 import BackgroundImg from '../../images/underwater.png';
@@ -123,7 +123,7 @@ const Home = () => {
         speed={0.1}
         style={parallaxLayerCommonStyle}
       >
-        <ProfileSection />
+        <AboutSection />
       </ParallaxLayer>
       <ParallaxLayer
         offset={2}

@@ -1,7 +1,11 @@
 import React from 'react';
 import { Block, Row } from './AboutSectionElements';
 
-const AboutRow = ({ rowData }) => {
+type AboutRowProps = {
+  rowData: Array<string>;
+}
+
+const AboutRow = ({ rowData }: AboutRowProps) => {
   return (
     <Row>
       {rowData.map(data =>

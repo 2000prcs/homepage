@@ -46,10 +46,8 @@ export const List = styled.div`
   margin-bottom: 20px;
 `
 
-export const Title = styled.h1`
-  font-size: clamp(25px,3vw,40px);
-  margin-bottom: 20px;
-  width: 100%;
+export const Paragraph = styled.p`
+  font-size: clamp(17px,2vw,22px);
 `
 
 export const Row = styled.div`
@@ -63,6 +61,8 @@ export const Row = styled.div`
   }
 `
 
-export const Paragraph = styled.p`
-  font-size: clamp(17px,2vw,22px);
+export const Title = styled.h1`
+  font-size: clamp(25px,3vw,40px);
+  margin-bottom: 20px;
+  width: 100%;
 `
