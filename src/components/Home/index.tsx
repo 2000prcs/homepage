@@ -1,11 +1,12 @@
 import React, { useRef, useState } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-import Sidebar from '../Sidebar';
 import Navbar from '../Navbar';
+import Sidebar from '../Sidebar';
 import HeroSection from '../HeroSection';
 import ProfileSection from '../AboutSection';
 import PortfolioSection from '../PortfolioSection';
 import ContactSection from '../ContactSection';
+import BackgroundImg from '../../images/underwater.png';
 import {
   StyledFishClusterImg,
   StyledTwoFishesImg,
@@ -31,8 +32,6 @@ import {
   StyledMermaidOneImg
 } from './HomeElements';
 
-import BackgroundImg from '../../images/underwater.png';
-
 const Home:React.FC = () => {
   const parallaxRef = useRef<Parallax>(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +46,7 @@ const Home:React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  const commonStyle = {
+  const parallaxLayerCommonStyle = {
     alignItems: 'center',
     display: 'flex',
     justifyContent: 'center'
@@ -55,13 +54,13 @@ const Home:React.FC = () => {
 
   return ( 
     <>
-    <Navbar currentPage={currentPage} toggle={toggle} scrollPage={scrollPage} parallaxRef={parallaxRef} />
-    <Sidebar currentPage={currentPage} isOpen={isOpen} toggle={toggle} scrollPage={scrollPage} />
+    <Navbar currentPage={currentPage} parallaxRef={parallaxRef} scrollPage={scrollPage} toggle={toggle} />
+    <Sidebar currentPage={currentPage} isOpen={isOpen} scrollPage={scrollPage} toggle={toggle} />
     <Parallax pages={4} ref={parallaxRef}>
       <ParallaxLayer
+        factor={4}
         offset={0}
         speed={0}
-        factor={4}
         style={{ backgroundImage: `url(${BackgroundImg})`, backgroundSize: 'cover', backgroundPosition: 'center center'}}
       />
       <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#04b2d9', opacity: 0.6 }} />
@@ -115,28 +114,28 @@ const Home:React.FC = () => {
       <ParallaxLayer
         offset={0}
         speed={0.1}
-        style={commonStyle}
+        style={parallaxLayerCommonStyle}
       >
         <HeroSection scrollPage={scrollPage} pageNumber={1} />
       </ParallaxLayer>
       <ParallaxLayer
         offset={1}
         speed={0.1}
-        style={commonStyle}
+        style={parallaxLayerCommonStyle}
       >
         <ProfileSection />
       </ParallaxLayer>
       <ParallaxLayer
         offset={2}
         speed={0.1}
-        style={commonStyle}
+        style={parallaxLayerCommonStyle}
       >
         <PortfolioSection />
       </ParallaxLayer>
       <ParallaxLayer
         offset={3}
         speed={-0}
-        style={commonStyle}
+        style={parallaxLayerCommonStyle}
       >
         <ContactSection />
       </ParallaxLayer>
