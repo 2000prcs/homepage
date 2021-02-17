@@ -12,7 +12,16 @@ import NavItem from './NavItem';
 import navData from './NavData';
 import debounce from '../../helpers/debounce';
 
-const NavBar = ({ currentPage, scrollPage, toggle, parallaxRef }) => {
+type NavBarProps = {
+  currentPage: number,
+  parallaxRef: {
+    [key: string]: any
+  },
+  scrollPage: (pageNumber: number) => void,
+  toggle: () => void
+}
+
+const NavBar = ({ currentPage, parallaxRef, scrollPage, toggle }: NavBarProps) => {
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
 

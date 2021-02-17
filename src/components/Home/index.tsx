@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-import Navbar from '../Navbar';
-import Sidebar from '../Sidebar';
+import Navbar from '../Navbar/index';
+import Sidebar from '../Sidebar/index';
 import HeroSection from '../HeroSection/index';
 import AboutSection from '../AboutSection/index';
 import PortfolioSection from '../PortfolioSection/index';
-import ContactSection from '../ContactSection';
+import ContactSection from '../ContactSection/index';
 import BackgroundImg from '../../images/underwater.png';
 import {
   StyledFishClusterImg,
@@ -37,7 +37,7 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
 
-  const scrollPage = (pageNumber) => {
+  const scrollPage = (pageNumber: number) => {
     setCurrentPage(pageNumber);
     parallaxRef.current.scrollTo(pageNumber);
   };

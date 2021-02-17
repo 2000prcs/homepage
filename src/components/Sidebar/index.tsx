@@ -9,7 +9,14 @@ import {
 } from './SidebarElements';
 import navData from '../Navbar/NavData';
 
-const Sidebar = ({ currentPage, isOpen, scrollPage, toggle }) => {
+type SidebarProps = {
+  currentPage: number,
+  isOpen: boolean,
+  scrollPage: (pageNumber: number) => void,
+  toggle: () => void
+}
+
+const Sidebar = ({ currentPage, isOpen, scrollPage, toggle }: SidebarProps) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <IconContainer onClick={toggle}>
