@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import GithubIcon from '../../icons/github.svg';
 import PlayIcon from '../../icons/play.svg';
