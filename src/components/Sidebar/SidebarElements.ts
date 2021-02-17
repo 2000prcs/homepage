@@ -1,9 +1,6 @@
 import styled from 'styled-components';
+import { SidebarContainerProps, LinkTextProps } from './ElementsProps';
 import CloseIcon from '../../icons/x.svg';
-
-interface SidebarContainerProps {
-  isOpen: boolean
-}
 
 export const SidebarContainer = styled.aside<SidebarContainerProps>`
   position: fixed;
@@ -63,10 +60,6 @@ export const Link = styled.div`
   text-decoration: none;
   transition: 0.2s ease-in-out;
 `
-
-interface LinkTextProps {
-  isCurrentPage: boolean
-}
 
 export const LinkText = styled.div<LinkTextProps>`
   border-bottom: ${({ isCurrentPage }) => (isCurrentPage ? '2px solid #ffffff' : 'none' )};

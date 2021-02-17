@@ -3,7 +3,7 @@
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
 
-const debounce = (func, delay, immediate) => {
+const debounce = (func: () => void, delay: number, immediate?: () => void) => {
   let timeout;
   return (...args) => {
     const boundFunc = func.bind(this, ...args);

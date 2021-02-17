@@ -1,7 +1,12 @@
 import React from 'react';
 import { Spring } from 'react-spring/renderprops';
 
-const HoverSpring = ({ children, isHover }) => {
+type HoverSpringProps = {
+  children: (props: any) => React.ReactNode,
+  isHover: boolean
+}
+
+const HoverSpring = ({ children, isHover }: HoverSpringProps) => {
   return (
     <Spring
       from={{ opacity: '0' }}
