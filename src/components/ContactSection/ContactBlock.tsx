@@ -1,7 +1,12 @@
 import React from 'react';
 import { Block } from './ContactSectionElements';
 
-const ContactBlock = ({ icon, url }) => {
+type ContactBlockProps = {
+  icon: React.SVGProps<SVGElement>,
+  url: string
+}
+
+const ContactBlock = ({ icon, url }: ContactBlockProps) => {
   return (
     <Block>
       <a href={url} target="_blank" rel="noreferrer">{icon}</a>
