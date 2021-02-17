@@ -13,12 +13,21 @@ import {
   Technologies
 } from './PortfolioSectionElements';
 
-const PortfolioBlock = ({ description, gif, image, name, technologies, repo }) => {
+type PortfolioBlockProps = {
+  description: string,
+  gif: string,
+  image: string,
+  name: string,
+  repo: string,
+  technologies: string
+}
+
+const PortfolioBlock = ({ description, gif, image, name, repo, technologies }: PortfolioBlockProps) => {
   const [isGifPlaying, playGif] = useState(false);
 
   return (
     <BlockContainer>
-      <Block 
+      <Block
         gif={gif}
         image={image}
         isGifPlaying={isGifPlaying}

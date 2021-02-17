@@ -4,7 +4,7 @@ import Navbar from '../Navbar';
 import Sidebar from '../Sidebar';
 import HeroSection from '../HeroSection/index';
 import AboutSection from '../AboutSection/index';
-import PortfolioSection from '../PortfolioSection';
+import PortfolioSection from '../PortfolioSection/index';
 import ContactSection from '../ContactSection';
 import BackgroundImg from '../../images/underwater.png';
 import {
