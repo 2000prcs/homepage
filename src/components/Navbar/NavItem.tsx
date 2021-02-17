@@ -2,7 +2,14 @@ import React, { useState } from 'react';
 import { Item, NavLinks, Underline } from './NavbarElements';
 import HoverSpring from '../../helpers/HoverSpring';
 
-const NavItem = ({ isCurrentPage, pageName, pageNumber, scrollPage }) => {
+type NavItemProps = {
+  isCurrentPage: boolean,
+  pageName: string,
+  pageNumber: number,
+  scrollPage: (pageNumber: number) => void
+}
+
+const NavItem = ({ isCurrentPage, pageName, pageNumber, scrollPage }: NavItemProps) => {
   const [isHover, setIsHover] = useState(false);  
 
   const handleMouseEnter = () => {

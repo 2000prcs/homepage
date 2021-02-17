@@ -7,7 +7,11 @@ export const Item = styled.li`
   margin-right: 2.5rem;
 `
 
-export const Nav = styled.nav`
+interface NavProps {
+  isVisible: boolean
+}
+
+export const Nav = styled.nav<NavProps>`
   align-items: center;
   background: transparent;
   backdrop-filter: saturate(100%) blur(10px);
@@ -54,7 +58,11 @@ export const NavMenu = styled.ul`
   }
 `
 
-export const NavLinks = styled.div`
+interface NavLinksProps {
+  isCurrentPage: boolean
+}
+
+export const NavLinks = styled.div<NavLinksProps>`
   align-items: center;
   border-bottom: ${({ isCurrentPage }) => (isCurrentPage ? '2px solid #ffffff' : 'none' )};
   color: #ffffff;
