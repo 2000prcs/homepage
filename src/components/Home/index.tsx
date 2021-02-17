@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import Navbar from '../Navbar';
 import Sidebar from '../Sidebar';
-import HeroSection from '../HeroSection';
+import HeroSection from '../HeroSection/index';
 import ProfileSection from '../AboutSection';
 import PortfolioSection from '../PortfolioSection';
 import ContactSection from '../ContactSection';
@@ -32,7 +32,7 @@ import {
   StyledMermaidOneImg
 } from './HomeElements';
 
-const Home:React.FC = () => {
+const Home = () => {
   const parallaxRef = useRef<Parallax>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
@@ -116,7 +116,7 @@ const Home:React.FC = () => {
         speed={0.1}
         style={parallaxLayerCommonStyle}
       >
-        <HeroSection scrollPage={scrollPage} pageNumber={1} />
+        <HeroSection />
       </ParallaxLayer>
       <ParallaxLayer
         offset={1}
