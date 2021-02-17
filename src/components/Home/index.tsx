@@ -37,7 +37,7 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
 
-  const scrollPage = (pageNumber) => {
+  const scrollPage = (pageNumber: number) => {
     setCurrentPage(pageNumber);
     parallaxRef.current.scrollTo(pageNumber);
   };

@@ -58,11 +58,11 @@ export const NavMenu = styled.ul`
   }
 `
 
-interface NavLinksProps {
+interface NavLinkProps {
   isCurrentPage: boolean
 }
 
-export const NavLinks = styled.div<NavLinksProps>`
+export const NavLink = styled.div<NavLinkProps>`
   align-items: center;
   border-bottom: ${({ isCurrentPage }) => (isCurrentPage ? '2px solid #ffffff' : 'none' )};
   color: #ffffff;
