@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavProps, NavLinkProps } from './ElementsProps';
 import HomeIcon from '../../icons/home.svg';
 import MenuIcon from '../../icons/menu.svg';
 
@@ -6,10 +7,6 @@ export const Item = styled.li`
   display: flex;
   margin-right: 2.5rem;
 `
-
-interface NavProps {
-  isVisible: boolean
-}
 
 export const Nav = styled.nav<NavProps>`
   align-items: center;
@@ -57,10 +54,6 @@ export const NavMenu = styled.ul`
     display: none;
   }
 `
-
-interface NavLinkProps {
-  isCurrentPage: boolean
-}
 
 export const NavLink = styled.div<NavLinkProps>`
   align-items: center;
