@@ -1,12 +1,19 @@
+import React from 'react';
 import styled from 'styled-components';
 import GithubIcon from '../../icons/github.svg';
 import PlayIcon from '../../icons/play.svg';
 
-export const Block = styled.div`
+interface BlockProps {
+  gif: string,
+  image: string,
+  isGifPlaying: boolean
+}
+
+export const Block = styled.div<BlockProps>`
   background-image: ${({ gif, image, isGifPlaying }) => (isGifPlaying ? `url(${gif})` : `url(${image})`)};
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; 
+  background-position: center center;
   border-radius: 10%;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;

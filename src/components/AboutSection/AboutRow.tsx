@@ -2,7 +2,7 @@ import React from 'react';
 import { Block, Row } from './AboutSectionElements';
 
 type AboutRowProps = {
-  rowData: Array<string>;
+  rowData: string[];
 }
 
 const AboutRow = ({ rowData }: AboutRowProps) => {
