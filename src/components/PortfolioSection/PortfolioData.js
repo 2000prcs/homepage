@@ -1,5 +1,5 @@
-import gameImg from '../../images/cat_dating_game.png';
-import gameGif from '../../images/cat_dating_game.gif';
+import gameImg from '../../assets/images/cat_dating_game.png';
+import gameGif from '../../assets/images/cat_dating_game.gif';
 
 const PortfolioData = [
     {

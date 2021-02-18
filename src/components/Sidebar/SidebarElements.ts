@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { SidebarContainerProps, LinkTextProps } from './ElementsProps';
-import CloseIcon from '../../icons/x.svg';
+import CloseIcon from '../../assets/icons/x.svg';
 
 export const SidebarContainer = styled.aside<SidebarContainerProps>`
   position: fixed;

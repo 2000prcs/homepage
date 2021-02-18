@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { BlockProps } from './ElementsProps';
-import GithubIcon from '../../icons/github.svg';
-import PlayIcon from '../../icons/play.svg';
+import GithubIcon from '../../assets/icons/github.svg';
+import PlayIcon from '../../assets/icons/play.svg';
 
 export const Block = styled.div<BlockProps>`
   background-image: ${({ gif, image, isGifPlaying }) => (isGifPlaying ? `url(${gif})` : `url(${image})`)};

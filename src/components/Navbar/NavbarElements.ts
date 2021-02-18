@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavProps, NavLinkProps } from './ElementsProps';
-import HomeIcon from '../../icons/home.svg';
-import MenuIcon from '../../icons/menu.svg';
+import HomeIcon from '../../assets/icons/home.svg';
+import MenuIcon from '../../assets/icons/menu.svg';
 
 export const Item = styled.li`
   display: flex;
