@@ -2,6 +2,8 @@
   Mo's Homepage
 </h1>
 
+<img src="https://i.imgur.com/iecvDYl.png">
+
 ## 🚀 Quick start
 
 1.  **Install project dependencies.**
@@ -28,6 +30,7 @@
 ## ⚒️ Built With
 
 - [NPM](https://www.npmjs.com/)
+- [Gatsby](https://www.gatsbyjs.com/)
 - [React](https://reactjs.org/)
 - [React Spring](https://www.react-spring.io/)
 - [TypeScript](https://www.typescriptlang.org/)
