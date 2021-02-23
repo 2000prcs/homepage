@@ -1,4 +1,5 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import SidebarLink from './SidebarLink';
 import {
   IconContainer,
@@ -7,7 +8,6 @@ import {
   SidebarMenu,
   StyledCloseIcon,
 } from './SidebarElements';
-import navData from '../Navbar/NavData';
 
 type SidebarProps = {
   currentPage: number,
@@ -17,6 +17,20 @@ type SidebarProps = {
 }
 
 const Sidebar = ({ currentPage, isOpen, scrollPage, toggle }: SidebarProps) => {
+  const data = useStaticQuery(graphql`
+    {
+      allDataJson {
+        edges {
+          node {
+            pageName
+            pageNumber
+          }
+        }
+      }
+    }
+  `);
+  const navData = data.allDataJson.edges.map((item: { node: object }) => item.node);
+
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <IconContainer onClick={toggle}>
@@ -24,7 +38,7 @@ const Sidebar = ({ currentPage, isOpen, scrollPage, toggle }: SidebarProps) => {
       </IconContainer>
       <SidebarWrapper>
         <SidebarMenu>
-          {navData.map((data) => 
+          {navData.map((data: { pageName: string, pageNumber: number }) => 
             <SidebarLink
               isCurrentPage={currentPage === data.pageNumber}
               pageName={data.pageName}

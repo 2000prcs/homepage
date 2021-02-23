@@ -1,0 +1,81 @@
+[
+  {
+    "pageName": "About",
+    "pageNumber": 1,
+    "paragraphs": [
+      "Born and raised in South Korea 🇰🇷, moved to the US 🇺🇸 in 2014.",
+      "I love seeing people's happy faces while they're experiencing my creations - it's what led me to be a Software Engineer.",
+      "My motivation and inspiration often comes from people around me."
+    ],
+    "technologies": [
+      [
+        "✨ JavaScript (ES6+)",
+        "✨ React/Redux",
+        "✨ React Native",
+        "✨ Node.js",
+        "✨ TypeScript"
+      ],
+      [
+        "✨ Python",
+        "✨ Django",
+        "✨ AWS",
+        "✨ PostgreSQL",
+        "✨ Docker"
+      ]
+    ],
+    "interests": [
+      [
+        "🐱🐶 My furry babies",
+        "🎮🎲 Game"
+      ],
+      [
+        "✈️🧳 Travel",
+        "🎶💃 Music & Dance"
+      ],
+      [
+        "🎹 Piano",
+        "🍄🥩 Food"
+      ]
+    ]
+  },
+  {
+    "pageName": "Portfolio",
+    "pageNumber": 2,
+    "content": [
+      {
+          "name": "Dear My Cat",
+          "description": "Mobile simulation game built with React Native. The gameplay is 'Dating with your ideal type of cat'. You can choose your ideal type of cat and then spend time with the cat until your own ending. You can be 'Nyanmates' with your cat, or something bad might happen..?!",
+          "imageName": "cat_dating_game.png",
+          "gifName": "cat_dating_game.gif",
+          "repo": "https://github.com/2000prcs/Dear-My-Cat",
+          "technologies": "React Native, Redux, React Router"
+      }
+    ]
+  },
+  {
+    "pageName": "Contact",
+    "pageNumber": 3,
+    "content": [
+      {
+        "name": "github",
+        "icon": "Github",
+        "url": "https://github.com/2000prcs"
+      },
+      {
+        "name": "linkedin",
+        "icon": "Linkedin",
+        "url": "https://www.linkedin.com/in/moyeonglee"
+      },
+      {
+        "name": "instagram",
+        "icon": "Instagram",
+        "url": "https://www.instagram.com/momo_sf"
+      },
+      {
+        "name": "email",
+        "icon": "Email",
+        "url": "mailto:2000prcs@gmail.com"
+      }
+    ]
+  }
+]

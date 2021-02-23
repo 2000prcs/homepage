@@ -59,6 +59,7 @@ export const Content = styled.div`
 export const Description = styled.div`
   font-size: clamp(13px,2vw,22px);
   margin-bottom: 10px;
+  line-height: 1.4;
 `
 
 export const Name = styled.h1`

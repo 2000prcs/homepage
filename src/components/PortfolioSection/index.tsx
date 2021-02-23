@@ -1,20 +1,48 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Content, Title } from './PortfolioSectionElements';
 import PortfolioBlock from './PortfolioBlock';
-import PortfolioData from './PortfolioData';
 
 const PortfolioSection = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allDataJson(filter: {pageName: {eq: "Portfolio"}}) {
+        edges {
+          node {
+            content {
+              name
+              description
+              imageName
+              gifName
+              repo
+              technologies
+            }
+          }
+        }
+      }
+    }
+  `);
+  const portfolioData = data.allDataJson.edges.map((item: { node: object }) => item.node);
+
   return (
     <Container>
       <Title>
         My Work
       </Title>
       <Content>
-        {PortfolioData.map(data => 
+        {portfolioData[0].content.map((
+          data: { 
+            description: string, 
+            gifName: string,
+            imageName: string,
+            name: string,
+            repo: string,
+            technologies: string
+          }) => 
           <PortfolioBlock
             description={data.description}
-            gif={data.gif}
-            image={data.image}
+            gifName={data.gifName}
+            imageName={data.imageName}
             name={data.name}
             repo={data.repo}
             technologies={data.technologies}

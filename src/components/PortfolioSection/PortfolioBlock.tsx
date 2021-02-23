@@ -15,15 +15,17 @@ import {
 
 type PortfolioBlockProps = {
   description: string,
-  gif: string,
-  image: string,
+  gifName: string,
+  imageName: string,
   name: string,
   repo: string,
   technologies: string
 }
 
-const PortfolioBlock = ({ description, gif, image, name, repo, technologies }: PortfolioBlockProps) => {
+const PortfolioBlock = ({ description, gifName, imageName, name, repo, technologies }: PortfolioBlockProps) => {
   const [isGifPlaying, playGif] = useState(false);
+  const gif = require(`../../assets/images/${gifName}`);
+  const image = require(`../../assets/images/${imageName}`);
 
   return (
     <BlockContainer>
