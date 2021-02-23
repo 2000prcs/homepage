@@ -8,12 +8,11 @@ import {
   StyledInstagramIcon,
   StyledEmailIcon
 } from './ContactSectionElements';
-// import contactData from './ContactData';
 
 const ContactSection = () => {
   const data = useStaticQuery(graphql`
     {
-      allDataJson(filter: {pageName: {eq: "Portfolio"}}) {
+      allDataJson(filter: {pageName: {eq: "Contact"}}) {
         edges {
           node {
             content {
@@ -28,26 +27,31 @@ const ContactSection = () => {
   `);
   const contactData = data.allDataJson.edges.map((item: { node: object }) => item.node);
 
+  interface ContactIconsConfig {
+    [key: string]: React.SVGProps<SVGElement>,
+  }
+  const contactIcons: ContactIconsConfig = {
+    github: <StyledGithubIcon />,
+    linkedin: <StyledLinkedinIcon />,
+    instagram: <StyledInstagramIcon />,
+    email: <StyledEmailIcon />
+  };
+
   return (
     <Container>
       <Title>Contact Me!</Title>
       <Content>
         {contactData[0].content.map((
-          data: { 
+          data: {
             icon: string,
             name: string,
             url: string
-          }) => {
-            const iconComponent = `Styled${data.icon}Icon`
-
-            return (
-              <ContactBlock
-                icon={iconComponent}
-                url={data.url}
-                key={data.name}
-              />
-            );
-          }
+          }) =>
+          <ContactBlock
+            icon={contactIcons[data.name]}
+            url={data.url}
+            key={data.name}
+          />
         )}
       </Content>
     </Container>
