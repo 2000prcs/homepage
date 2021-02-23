@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import {
   Nav,
   NavbarContainer,
@@ -9,7 +10,6 @@ import {
   StyledMenuIcon
 } from './NavbarElements';
 import NavItem from './NavItem';
-import navData from './NavData';
 import debounce from '../../helpers/debounce';
 
 type NavBarProps = {
@@ -22,6 +22,20 @@ type NavBarProps = {
 }
 
 const NavBar = ({ currentPage, parallaxRef, scrollPage, toggle }: NavBarProps) => {
+  const data = useStaticQuery(graphql`
+    {
+      allDataJson {
+        edges {
+          node {
+            pageName
+            pageNumber
+          }
+        }
+      }
+    }
+  `);
+  const navData = data.allDataJson.edges.map((item: { node: object }) => item.node);
+
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -47,7 +61,7 @@ const NavBar = ({ currentPage, parallaxRef, scrollPage, toggle }: NavBarProps) =
             <StyledMenuIcon />
           </MobileIcon>
           <NavMenu>
-            {navData.map((data) => 
+            {navData.map((data: { pageName: string, pageNumber: number }) =>
               <NavItem
                 isCurrentPage={currentPage === data.pageNumber}
                 pageName={data.pageName}

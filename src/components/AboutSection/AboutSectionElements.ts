@@ -48,6 +48,7 @@ export const List = styled.div`
 
 export const Paragraph = styled.p`
   font-size: clamp(17px,2vw,22px);
+  line-height: 1.4;
 `
 
 export const Row = styled.div`

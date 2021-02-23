@@ -6,7 +6,7 @@ import HeroSection from '../HeroSection/index';
 import AboutSection from '../AboutSection/index';
 import PortfolioSection from '../PortfolioSection/index';
 import ContactSection from '../ContactSection/index';
-import BackgroundImg from '../../images/underwater.png';
+import BackgroundImg from '../../assets/images/underwater.png';
 import {
   StyledFishClusterImg,
   StyledTwoFishesImg,

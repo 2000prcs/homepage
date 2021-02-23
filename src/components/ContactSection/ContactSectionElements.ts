@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import GithubIcon from '../../icons/github.svg';
-import LinkedinIcon from '../../icons/linkedin.svg';
-import InstagramIcon from '../../icons/instagram.svg';
-import EmailIcon from '../../icons/email.svg';
+import GithubIcon from '../../assets/icons/github.svg';
+import LinkedinIcon from '../../assets/icons/linkedin.svg';
+import InstagramIcon from '../../assets/icons/instagram.svg';
+import EmailIcon from '../../assets/icons/email.svg';
 
 export const Block = styled.div`
   display: flex;
